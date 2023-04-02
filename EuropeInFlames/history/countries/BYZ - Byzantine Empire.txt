@@ -42,6 +42,5 @@ set_popularities = {
 add_ideas = {
 	BYZ_worker_shortage
 	BYZ_bulwark_against_islam
-	BYZ_unrelenting_defense
-	BYZ_greek_fire
+	BYZ_no_air_force
 }
