@@ -16,16 +16,16 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 1500 }
 
 	focus = {
-		id = BYZ_coronation
+		id = BYZ_a_public_funeral
 
 		icon = GFX_focus_eng_god_save_the_king
-		x = 2
-		y = 1
-		cost = 5
+		x = 19
+		y = 0
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}
-		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}	
+		search_filters = {FOCUS_FILTER_STABILITY}	
 		completion_reward = {
 			if = {
 				limit = {
@@ -33,6 +33,102 @@ focus_tree = {
 				}
 				remove_country_leader_trait = inexperienced_basileus_1
 				add_country_leader_trait = inexperienced_basileus_2
+			}
+		}
+	}
+
+	focus = {
+		id = BYZ_court_the_legions
+		icon = GFX_goal_support_fascism #icon = GFX_goal_tripartite_pact
+		prerequisite = { focus = BYZ_a_public_funeral }
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+		}
+		x = 1
+		y = 1
+		relative_position_id = BYZ_a_public_funeral
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_POLITICAL  }
+
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_popularity = { ideology = fascism popularity = 0.05 }
+			if = {
+				limit = {
+					AND = {
+						has_country_leader = { ruling_only = yes name = "Basileus Basil IV" }
+						has_completed_focus = BYZ_address_the_senate
+					}
+				}
+				remove_country_leader_trait = inexperienced_basileus_senate
+				add_country_leader_trait = inexperienced_basileus_legion_senate
+			}
+			if = {
+				limit = {
+					has_country_leader = { ruling_only = yes name = "Basileus Basil IV" }
+					NOT = {
+						has_completed_focus = BYZ_address_the_senate
+					}
+				}
+				remove_country_leader_trait = inexperienced_basileus_2
+				add_country_leader_trait = inexperienced_basileus_legion
+			}
+		}
+	}
+
+	focus = {
+		id = BYZ_address_the_senate
+		icon = GFX_goal_generic_national_unity #icon = GFX_goal_tripartite_pact
+		prerequisite = { focus = BYZ_a_public_funeral }
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+		}
+		x = -1
+		y = 1
+		relative_position_id = BYZ_a_public_funeral
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_POLITICAL  }
+
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_popularity = { ideology = democratic popularity = 0.05 }
+			if = {
+				limit = {
+					AND = {
+						has_country_leader = { ruling_only = yes name = "Basileus Basil IV" }
+						has_completed_focus = BYZ_court_the_legions
+					}
+				}
+				remove_country_leader_trait = inexperienced_basileus_legion
+				add_country_leader_trait = inexperienced_basileus_legion_senate
+			}
+			if = {
+				limit = {
+					has_country_leader = { ruling_only = yes name = "Basileus Basil IV" }
+					NOT = {
+						has_completed_focus = BYZ_court_the_legions
+					}
+				}
+				remove_country_leader_trait = inexperienced_basileus_2
+				add_country_leader_trait = inexperienced_basileus_senate
 			}
 		}
 	}
