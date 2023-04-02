@@ -132,4 +132,40 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = BYZ_host_chariot_races
+		icon = GFX_focus_eng_god_save_the_king
+		prerequisite = { focus = BYZ_address_the_senate }
+		prerequisite = { focus = BYZ_court_the_legions }
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+		}
+		x = 0
+		y = 2
+		relative_position_id = BYZ_a_public_funeral
+
+		cost = 5
+	
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_STABILITY}	
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_leader = { ruling_only = yes name = "Basileus Basil IV" }
+				}
+				add_timed_idea = { idea = USA_adjusted_compensation_payment days = 180 }
+				remove_country_leader_trait = inexperienced_basileus_legion_senate
+				add_country_leader_trait = young_basileus
+			}
+		}
+	}
 }
