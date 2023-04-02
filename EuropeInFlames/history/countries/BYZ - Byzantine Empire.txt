@@ -17,7 +17,7 @@ if = {
 	}
 }
 
-# recruit_character = GUA_jorge_ubico
+recruit_character = BYZ_Basileus_Basil_IV
 
 set_war_support = 0.1
 set_convoys = 50

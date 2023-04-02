@@ -1,0 +1,6 @@
+spriteTypes = {
+    spriteType = {
+        name = GFX_portrait_BYZ_Basileus_Basil_IV
+        texturefile = gfx/leaders/BYZ/portrait_BYZ_Basileus_Basil_IV.dds
+    }
+}

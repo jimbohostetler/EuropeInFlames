@@ -1,0 +1,17 @@
+characters={
+	BYZ_Basileus_Basil_IV={
+		name="Basileus Basil IV"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_BYZ_Basileus_Basil_IV
+			}
+		}
+
+		country_leader={
+			ideology=despotism
+			traits={ professional_crisis_solver}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}
