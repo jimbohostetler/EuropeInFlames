@@ -50,7 +50,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = BYZ_a_public_funeral
-		cost = 5
+		cost = 2
 	
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 
@@ -98,7 +98,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = BYZ_a_public_funeral
-		cost = 5
+		cost = 2
 	
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 

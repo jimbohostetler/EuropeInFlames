@@ -3139,7 +3139,7 @@ leader_traits = {
 		army_chief_cost_factor = 0.25
 		navy_chief_cost_factor = 0.25
 		political_power_factor = -0.1
-		stability_factor = -0.1
+		stability_weekly = -0.01
 
 		ai_will_do = {
 			factor = 1
@@ -3157,7 +3157,7 @@ leader_traits = {
 		army_chief_cost_factor = 0.25
 		navy_chief_cost_factor = 0.25
 		political_power_factor = -0.1
-		stability_factor = -0.05
+		stability_weekly = -0.005
 
 		ai_will_do = {
 			factor = 1
@@ -3170,7 +3170,7 @@ leader_traits = {
 		trade_laws_cost_factor = 0.25
 		economy_cost_factor = 0.25
 		political_power_factor = -0.1
-		stability_factor = -0.05
+		stability_weekly = -0.005
 
 		ai_will_do = {
 			factor = 1
@@ -3185,7 +3185,7 @@ leader_traits = {
 		army_chief_cost_factor = 0.25
 		navy_chief_cost_factor = 0.25
 		political_power_factor = -0.05
-		stability_factor = -0.05
+		stability_weekly = -0.005
 
 		ai_will_do = {
 			factor = 1
@@ -3195,7 +3195,7 @@ leader_traits = {
 	inexperienced_basileus_legion_senate = {
 		random = no
 		political_power_factor = -0.05
-		stability_factor = -0.05
+		stability_weekly = -0.005
 
 		ai_will_do = {
 			factor = 1
