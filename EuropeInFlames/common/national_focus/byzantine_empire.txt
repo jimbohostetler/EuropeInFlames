@@ -162,7 +162,7 @@ focus_tree = {
 				limit = {
 					has_country_leader = { ruling_only = yes name = "Basileus Basil IV" }
 				}
-				add_timed_idea = { idea = USA_adjusted_compensation_payment days = 180 }
+				add_timed_idea = { idea = BYZ_chariot_payment days = 180 }
 				remove_country_leader_trait = inexperienced_basileus_legion_senate
 				add_country_leader_trait = young_basileus
 			}
