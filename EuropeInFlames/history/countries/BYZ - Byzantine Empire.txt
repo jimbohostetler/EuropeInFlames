@@ -7,6 +7,7 @@ set_technology = {
 	infantry_weapons = 1
 	gw_artillery = 1
 }
+
 if = {
 	limit = {
 		NOT = { has_dlc = "By Blood Alone" }
@@ -36,4 +37,11 @@ set_popularities = {
 	fascism = 15
 	communism = 2
 	neutrality = 78
+}
+
+add_ideas = {
+	BYZ_worker_shortage
+	BYZ_bulwark_against_islam
+	BYZ_unrelenting_defense
+	BYZ_greek_fire
 }
