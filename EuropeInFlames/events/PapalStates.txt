@@ -1,0 +1,62 @@
+###########################
+# Papal States Events
+###########################
+
+add_namespace = papal
+
+# Byzantine asks Pope for manpower
+country_event = {
+	id = papal.1
+	title = papal.1.t
+	desc = papal.1.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+
+	# YES
+	option = {
+		name = papal.1.a
+		ai_chance = {
+			factor = 75
+		}
+	
+		BYZ = {
+			swap_ideas = {
+				remove_idea = BYZ_worker_shortage
+				add_idea = BYZ_worker_shortage_pope
+			}
+
+			add_opinion_modifier = {
+				target = PAP modifier = ger_ita_tech_treaty
+			}
+
+			hidden_effect = {
+				news_event = { id = my_news_event.1 hours = 2 }
+			}
+		}
+	}
+
+	# CONDITIONAL
+	option = {
+		name = papal.1.b
+		ai_chance = {	
+			factor = 25
+		}
+
+		BYZ = {
+			add_timed_idea = {
+				idea = BYZ_paying_the_vatican
+				days = 180
+			}
+
+			swap_ideas = {
+				remove_idea = BYZ_worker_shortage
+				add_idea = BYZ_worker_shortage_pope
+			}
+
+			hidden_effect = {
+				news_event = { id = my_news_event.1 hours = 2 }
+			}
+		}
+	}
+}

@@ -489,7 +489,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			country_event = { id = byzantine.1 }
+			PAP = {
+				country_event = {
+					id = papal.1 hours = 6
+				}
+			}
 		}
 	}
 }
