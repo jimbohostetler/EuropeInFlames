@@ -96,7 +96,7 @@ ideas = {
 			}
 		}
 
-		BYZ_infant_air_force = {
+		BYZ_infant_air_force_1 = {
 			allowed = {
 				original_tag = BYZ
 			}
@@ -167,6 +167,148 @@ ideas = {
 			}
 		}
 
+		BYZ_infant_air_force_fighter = {
+			allowed = {
+				original_tag = BYZ
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_air_bonus
+				
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_air_factor = 0.05
+				air_mission_xp_gain_factor = 0.05
+				air_training_xp_gain_factor = 0.05
+			}
+
+			equipment_bonus = {
+				small_plane_airframe = {
+					instant = yes
+					build_cost_ic = 0.5
+				}
+				cv_small_plane_airframe = {
+					instant = yes
+					build_cost_ic = 1
+				}
+				small_plane_cas_airframe = {
+					instant = yes
+					build_cost_ic = 1
+				}
+				cv_small_plane_cas_airframe = {
+					instant = yes
+					build_cost_ic = 1
+				}
+				small_plane_naval_bomber_airframe = {
+					instant = yes
+					build_cost_ic = 1
+				}
+				cv_small_plane_naval_bomber_airframe = {
+					instant = yes
+					build_cost_ic = 1
+				}
+				medium_plane_airframe = {
+					instant = yes
+					build_cost_ic = 1
+				}
+				medium_plane_fighter_airframe = {
+					instant = yes
+					build_cost_ic = 1
+				}
+				medium_plane_scout_plane_airframe = {
+					instant = yes
+					build_cost_ic = 1
+				}
+				large_plane_airframe = {
+					instant = yes
+					build_cost_ic = 1
+				}
+				large_plane_maritime_patrol_plane_airframe = {
+					instant = yes
+					build_cost_ic = 1
+				}
+				transport_plane_equipment = {
+					instant = yes
+					build_cost_ic = 1
+				}
+			}
+		}
+
+		BYZ_infant_air_force_fighter_cas = {
+			allowed = {
+				original_tag = BYZ
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_air_bonus
+				
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_air_factor = 0.05
+				air_mission_xp_gain_factor = 0.05
+				air_training_xp_gain_factor = 0.05
+			}
+
+			equipment_bonus = {
+				small_plane_airframe = {
+					instant = yes
+					build_cost_ic = 0.5
+				}
+				cv_small_plane_airframe = {
+					instant = yes
+					build_cost_ic = 1
+				}
+				small_plane_cas_airframe = {
+					instant = yes
+					build_cost_ic = 0.5
+				}
+				cv_small_plane_cas_airframe = {
+					instant = yes
+					build_cost_ic = 1
+				}
+				small_plane_naval_bomber_airframe = {
+					instant = yes
+					build_cost_ic = 1
+				}
+				cv_small_plane_naval_bomber_airframe = {
+					instant = yes
+					build_cost_ic = 1
+				}
+				medium_plane_airframe = {
+					instant = yes
+					build_cost_ic = 1
+				}
+				medium_plane_fighter_airframe = {
+					instant = yes
+					build_cost_ic = 1
+				}
+				medium_plane_scout_plane_airframe = {
+					instant = yes
+					build_cost_ic = 1
+				}
+				large_plane_airframe = {
+					instant = yes
+					build_cost_ic = 1
+				}
+				large_plane_maritime_patrol_plane_airframe = {
+					instant = yes
+					build_cost_ic = 1
+				}
+				transport_plane_equipment = {
+					instant = yes
+					build_cost_ic = 1
+				}
+			}
+		}
+
 		BYZ_worker_shortage = {
 			picture = FRA_factory_strikes
 			allowed = {
@@ -197,7 +339,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.1
 			}
 		}
 
