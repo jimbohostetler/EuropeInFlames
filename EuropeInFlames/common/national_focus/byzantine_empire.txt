@@ -373,7 +373,7 @@ focus_tree = {
 	}
 
 	##############################
-	# Nation Focus Path
+	# Infrastructure Focus Path
 	##############################
 
 	focus = {
@@ -468,6 +468,28 @@ focus_tree = {
 		completion_reward = {
 			add_research_slot = 1
 			add_timed_idea = { idea = BYZ_funding_new_university days = 180 }
+		}
+	}
+
+	##############################
+	# Manpower Focus Path
+	##############################
+
+	focus = {
+		id = BYZ_ask_the_pope
+		icon = GFX_goal_generic_construct_civ_factory
+
+		x = 8
+		y = 0
+		relative_position_id = BYZ_a_public_funeral
+
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			country_event = { id = byzantine.1 }
 		}
 	}
 }

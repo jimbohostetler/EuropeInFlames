@@ -1,0 +1,52 @@
+###########################
+# Byzantine Empire Events
+###########################
+
+add_namespace = byzantine
+
+# Ask the Pope for men
+country_event = {
+	id = byzantine.1
+	title = byzantine.1.t
+	desc = byzantine.1.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	# Yes
+	option = {
+		name = byzantine.1.a
+		ai_chance = {
+			factor = 75
+		}
+
+		swap_ideas = {
+			remove_idea = BYZ_worker_shortage
+			add_idea = BYZ_worker_shortage_pope
+		}
+
+		BYZ = {
+			add_opinion_modifier = {
+				target = PAP modifier = ger_ita_tech_treaty
+			}
+		}
+	}
+
+	# Conditional Yes
+	option = {
+		name = byzantine.1.b
+		ai_chance {
+			factor = 25
+		}
+
+		add_timed_idea = {
+			idea = BYZ_paying_the_vatican
+			days = 180
+		}
+
+		swap_ideas = {
+			remove_idea = BYZ_worker_shortage
+			add_idea = BYZ_worker_shortage_pope
+		}
+	}
+}
