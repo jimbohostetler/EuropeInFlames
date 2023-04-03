@@ -1,0 +1,40 @@
+﻿units= {
+	fleet = {
+		name = "Caliphate Battle Fleet"			
+		naval_base = 4076
+		task_force = {				
+			name = "Caliphate Battle Fleet"			
+			location = 4076
+			ship = { name = "Dessert 1" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFC version_name = "Dessert Class"} } }
+			ship = { name = "Dessert 2" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFC version_name = "Dessert Class"} } }
+			ship = { name = "Dessert 3" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFC version_name = "Dessert Class"} } }
+			ship = { name = "Dessert 4" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFC version_name = "Dessert Class"} } }
+			ship = { name = "Dessert 5" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFC version_name = "Dessert Class"} } }
+			ship = { name = "Dessert 6" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFC version_name = "Dessert Class"} } }
+			ship = { name = "Dessert 7" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFC version_name = "Dessert Class"} } }
+			ship = { name = "Dessert 8" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFC version_name = "Dessert Class"} } }
+			ship = { name = "Dessert 9" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFC version_name = "Dessert Class"} } }
+			ship = { name = "Dessert 10" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFC version_name = "Dessert Class"} } }
+			ship = { name = "Dessert 11" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFC version_name = "Dessert Class"} } }
+			ship = { name = "Dessert 12" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFC version_name = "Dessert Class"} } }
+			ship = { name = "Dessert 13" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFC version_name = "Dessert Class"} } }
+			ship = { name = "Dessert 14" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFC version_name = "Dessert Class"} } }
+			ship = { name = "Dessert 15" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFC version_name = "Dessert Class"} } }
+			ship = { name = "Dessert 16" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFC version_name = "Dessert Class"} } }
+			ship = { name = "Dessert 17" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFC version_name = "Dessert Class"} } }
+			ship = { name = "Dessert 18" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFC version_name = "Dessert Class"} } }
+			ship = { name = "Dessert 19" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFC version_name = "Dessert Class"} } }
+			ship = { name = "Dessert 20" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFC version_name = "Dessert Class"} } }
+			ship = { name = "Dessert 21" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFC version_name = "Dessert Class"} } }
+			ship = { name = "Dessert 22" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFC version_name = "Dessert Class"} } }
+			ship = { name = "Dessert 23" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFC version_name = "Dessert Class"} } }
+			ship = { name = "Dessert 24" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFC version_name = "Dessert Class"} } }
+			ship = { name = "Dessert 25" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFC version_name = "Dessert Class"} } }
+			ship = { name = "Dessert 26" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFC version_name = "Dessert Class"} } }
+			ship = { name = "Dessert 27" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFC version_name = "Dessert Class"} } }
+			ship = { name = "Dessert 28" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFC version_name = "Dessert Class"} } }
+			ship = { name = "Dessert 29" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFC version_name = "Dessert Class"} } }
+			ship = { name = "Dessert 30" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AFC version_name = "Dessert Class"} } }
+		}							
+	}
+} 
