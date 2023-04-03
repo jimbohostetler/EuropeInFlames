@@ -1,0 +1,30 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "BYZ"
+		default = yes
+		
+		"BYZ"={
+			history = "BYZ_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				BYZ_worker_shortage
+				BYZ_bulwark_against_islam
+				BYZ_orthodox
+			}
+			focuses = {
+				BYZ_court_the_legions
+				BYZ_address_the_senate
+				BYZ_a_public_funeral
+			}
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

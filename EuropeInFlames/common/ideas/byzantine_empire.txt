@@ -90,5 +90,15 @@ ideas = {
 				consumer_goods_factor = 0.05
 			}
 		}
+
+		BYZ_orthodox = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = YUG_orthodox_church_support
+		}
 	}
 }

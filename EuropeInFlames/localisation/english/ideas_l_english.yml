@@ -2704,3 +2704,5 @@
  BYZ_worker_shortage_desc:0 "Centuries of warfare have seen entire generations of young men lost rather than entering the work force."
  BYZ_no_air_force:0 "No Air Force"
  BYZ_no_air_force_desc:0 "The Byzantine Empire has neglected it's airfoce entirely."
+ BYZ_orthodox:0 "Orthodox Nation"
+ BYZ_orthodox_desc:0 "A strong majority of this nation are of the Orthodox faith."

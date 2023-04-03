@@ -47,4 +47,5 @@ add_ideas = {
 	BYZ_worker_shortage
 	BYZ_bulwark_against_islam
 	BYZ_no_air_force
+	BYZ_orthodox
 }
