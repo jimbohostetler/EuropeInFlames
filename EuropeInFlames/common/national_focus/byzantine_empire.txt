@@ -371,4 +371,103 @@ focus_tree = {
 			}
 		}
 	}
+
+	##############################
+	# Nation Focus Path
+	##############################
+
+	focus = {
+		id = BYZ_capitol_infra
+
+		icon = GFX_goal_generic_construct_civ_factory
+
+		x = 6
+		y = 0
+		relative_position_id = BYZ_a_public_funeral
+
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		# search_filters = {FOCUS_FILTER_STABILITY}	
+
+		completion_reward = {
+			797 = { # Constantinople
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BYZ_capitol_defense
+
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = BYZ_capitol_infra }
+		x = 0
+		y = 1
+		relative_position_id = BYZ_capitol_infra
+
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		# search_filters = {FOCUS_FILTER_STABILITY}	
+
+		completion_reward = {
+			797 = { # Constantinople
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 9833
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 11829
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+
+			}
+		}
+	}
+
+	focus = {
+		id = BYZ_capitol_university
+
+		icon = GFX_focus_research
+		prerequisite = { focus = BYZ_capitol_defense }
+		x = 0
+		y = 1
+		relative_position_id = BYZ_capitol_defense
+
+		cost = 10
+		ai_will_do = {
+			factor = 50
+		}
+
+		# search_filters = {FOCUS_FILTER_STABILITY}	
+
+		completion_reward = {
+			add_research_slot = 1
+			add_timed_idea = { idea = BYZ_funding_new_university days = 180 }
+		}
+	}
 }
