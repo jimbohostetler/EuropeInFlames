@@ -15,15 +15,19 @@ focus_tree = {
 
 	continuous_focus_position = { x = 50 y = 1500 }
 
+	##############################
+	# Basileus Focus Path
+	##############################
+
 	focus = {
 		id = BYZ_a_public_funeral
 
 		icon = GFX_focus_eng_god_save_the_king
-		x = 19
+		x = 1
 		y = 0
 		cost = 1
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 		search_filters = {FOCUS_FILTER_STABILITY}	
 		completion_reward = {
@@ -31,8 +35,10 @@ focus_tree = {
 				limit = {
 					has_country_leader = { ruling_only = yes name = "Basileus Basil IV" }
 				}
-				remove_country_leader_trait = inexperienced_basileus_1
-				add_country_leader_trait = inexperienced_basileus_2
+				swap_ruler_traits = {
+					remove = inexperienced_basileus_1
+					add = inexperienced_basileus_2
+				}
 			}
 		}
 	}
@@ -57,7 +63,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 
 		completion_reward = {
@@ -69,8 +75,10 @@ focus_tree = {
 						has_completed_focus = BYZ_address_the_senate
 					}
 				}
-				remove_country_leader_trait = inexperienced_basileus_senate
-				add_country_leader_trait = inexperienced_basileus_legion_senate
+				swap_ruler_traits = {
+					remove = inexperienced_basileus_senate
+					add = inexperienced_basileus_legion_senate
+				}
 			}
 			if = {
 				limit = {
@@ -79,8 +87,10 @@ focus_tree = {
 						has_completed_focus = BYZ_address_the_senate
 					}
 				}
-				remove_country_leader_trait = inexperienced_basileus_2
-				add_country_leader_trait = inexperienced_basileus_legion
+				swap_ruler_traits = {
+					remove = inexperienced_basileus_2
+					add = inexperienced_basileus_legion
+				}
 			}
 		}
 	}
@@ -105,7 +115,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 
 		completion_reward = {
@@ -117,8 +127,10 @@ focus_tree = {
 						has_completed_focus = BYZ_court_the_legions
 					}
 				}
-				remove_country_leader_trait = inexperienced_basileus_legion
-				add_country_leader_trait = inexperienced_basileus_legion_senate
+				swap_ruler_traits = {
+					remove = inexperienced_basileus_legion
+					add = inexperienced_basileus_legion_senate
+				}
 			}
 			if = {
 				limit = {
@@ -127,8 +139,10 @@ focus_tree = {
 						has_completed_focus = BYZ_court_the_legions
 					}
 				}
-				remove_country_leader_trait = inexperienced_basileus_2
-				add_country_leader_trait = inexperienced_basileus_senate
+				swap_ruler_traits = {
+					remove = inexperienced_basileus_2
+					add = inexperienced_basileus_senate
+				}
 			}
 		}
 	}
@@ -153,7 +167,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 
 		search_filters = {FOCUS_FILTER_STABILITY}	
@@ -163,8 +177,98 @@ focus_tree = {
 					has_country_leader = { ruling_only = yes name = "Basileus Basil IV" }
 				}
 				add_timed_idea = { idea = BYZ_chariot_payment days = 180 }
-				remove_country_leader_trait = inexperienced_basileus_legion_senate
-				add_country_leader_trait = young_basileus
+				swap_ruler_traits = {
+					remove = inexperienced_basileus_legion_senate
+					add = young_basileus
+				}
+			}
+		}
+	}
+
+
+	##############################
+	# Airforce Focus Path
+	##############################
+
+	focus = {
+		id = BYZ_air_experiment
+		icon = GFX_goal_generic_air_doctrine
+		available = {
+
+		}
+		x = 3
+		y = 0
+		relative_position_id = BYZ_a_public_funeral
+
+		cost = 10
+	
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#TODO search_filters = {FOCUS_FILTER_STABILITY}	
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BYZ_no_air_force
+				add_idea = BYZ_infant_air_force
+			}
+
+			air_experience = 5
+
+			47 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BYZ_first_plane
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = BYZ_air_experiment }
+		available = {
+
+		}
+		x = 0
+		y = 1
+		relative_position_id = BYZ_air_experiment
+
+		cost = 10
+	
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#TODO search_filters = {FOCUS_FILTER_STABILITY}	
+		completion_reward = {
+			set_technology = {
+				iw_small_airframe = 1
+				engines_1 = 1
+				aa_lmg = 1
+				# early_bombs = 1
+				popup = yes
+			}
+
+			create_equipment_variant = {
+				name = "Smolikas F-1"
+				type = small_plane_airframe_0
+				modules = {
+					fixed_main_weapon_slot = light_mg_2x
+					engine_type_slot = engine_1_1x
+					special_type_slot_1 = empty
+				}
 			}
 		}
 	}
