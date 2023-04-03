@@ -3,4 +3,8 @@ spriteTypes = {
         name = GFX_portrait_BYZ_Basileus_Basil_IV
         texturefile = gfx/leaders/BYZ/portrait_BYZ_Basileus_Basil_IV.dds
     }
+    spriteType = {
+        name = GFX_portrait_AFC_Umar_The_Great
+        texturefile = gfx/leaders/AFC/portrait_AFC_Umar_The_Great.dds
+    }
 }

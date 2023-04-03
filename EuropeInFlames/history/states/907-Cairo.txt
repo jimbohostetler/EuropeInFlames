@@ -5,13 +5,10 @@ state={
 	state_category=town
 
 	history={
-		owner = ENG
+		owner = AFC
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
-			air_base = 5
-			
-
 		}
 		victory_points = {
 			7011 20 

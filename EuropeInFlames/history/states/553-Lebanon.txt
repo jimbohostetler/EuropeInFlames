@@ -7,14 +7,13 @@ state={
 	state_category = town
 
 	history={
-		owner = FRA
+		owner = AFC
 		victory_points = {
 			792 5 
 		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
-			air_base = 5
 			792 = {
 				naval_base = 3
 			}

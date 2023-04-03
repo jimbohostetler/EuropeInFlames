@@ -11,7 +11,7 @@ state={
 	state_category = town
 
 	history={
-		owner = TUR
+		owner = AFC
 		victory_points = {
 			11747 15
 		}
@@ -25,9 +25,8 @@ state={
 			infrastructure = 2
 			arms_factory = 2
 			industrial_complex = 2
-			air_base = 3
 		}
-		add_core_of = TUR
+		add_core_of = AFC
 	}
 
 	provinces={

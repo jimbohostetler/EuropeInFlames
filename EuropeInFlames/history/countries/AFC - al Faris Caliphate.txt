@@ -1,0 +1,37 @@
+capital = 856
+
+#oob = "BYZ_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	early_ship_hull_light = 1
+	basic_medium_battery = 1
+	basic_heavy_battery = 1
+}
+
+recruit_character = AFC_Umar_The_Great
+
+set_war_support = 0.2
+set_convoys = 50
+
+1939.1.1 = {
+	# not using in my mod
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1931.2.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 5
+	fascism = 5
+	communism = 10
+	neutrality = 80
+}
+
+add_ideas = {
+	limited_conscription
+}
