@@ -556,6 +556,21 @@ focus_tree = {
 		relative_position_id = BYZ_secure_albanian_support
 		prerequisite = { focus = BYZ_secure_albanian_support }
 
+		available = {
+			is_subject = no
+			NOT = {
+				has_war_with = ALB
+			}
+			OR = {
+				ALB = {
+					is_puppet_of = BYZ
+				}
+				ALB = {
+					exists = no
+				}
+			}
+		}
+
 		cost = 10
 		ai_will_do = {
 			factor = 5
@@ -610,6 +625,21 @@ focus_tree = {
 		y = 1
 		relative_position_id = BYZ_secure_kosovo_support
 		prerequisite = { focus = BYZ_secure_kosovo_support }
+
+		available = {
+			is_subject = no
+			NOT = {
+				has_war_with = KOS
+			}
+			OR = {
+				KOS = {
+					is_puppet_of = BYZ
+				}
+				KOS = {
+					exists = no
+				}
+			}
+		}
 
 		cost = 10
 		ai_will_do = {
