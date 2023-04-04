@@ -14,7 +14,7 @@
 
 units = {
 	division = {
-		name = "Infantry Division "
+		name = "Infantry Division 1"
 		location = 9809
 		division_template = "Infantry Division" 
 		start_experience_factor = 0.2
@@ -26,6 +26,17 @@ units = {
 units = {
 	division = {
 		name = "Infantry Division 2"
+		location = 9809
+		division_template = "Infantry Division" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+
+	}
+}
+
+units = {
+	division = {
+		name = "Infantry Division 3"
 		location = 9809
 		division_template = "Infantry Division" 
 		start_experience_factor = 0.2

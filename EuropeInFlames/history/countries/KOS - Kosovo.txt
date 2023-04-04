@@ -1,5 +1,7 @@
 ﻿capital = 802
 
+oob = "KOS_1936"
+
 set_research_slots = 3
 give_guarantee = MNT
 

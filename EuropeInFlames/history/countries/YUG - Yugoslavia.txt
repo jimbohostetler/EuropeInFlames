@@ -1,4 +1,4 @@
-﻿capital = 107
+﻿capital = 104
 
 if = {
 	limit = {

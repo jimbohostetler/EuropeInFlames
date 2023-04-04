@@ -409,6 +409,26 @@ ideas = {
 			}
 		}
 
+		BYZ_worker_shortage_bul = {
+			picture = FRA_factory_strikes
+			allowed = {
+				original_tag = BYZ
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.20
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+			}
+		}
+
 		BYZ_chariot_payment = {
 			allowed = {
 				always = no

@@ -27,7 +27,7 @@ focus_tree = {
 		y = 0
 		cost = 1
 		ai_will_do = {
-			factor = 100
+			factor = 1000
 		}
 		search_filters = {FOCUS_FILTER_STABILITY}	
 		completion_reward = {
@@ -63,7 +63,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		ai_will_do = {
-			factor = 100
+			factor = 1000
 		}
 
 		completion_reward = {
@@ -115,7 +115,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		ai_will_do = {
-			factor = 100
+			factor = 1000
 		}
 
 		completion_reward = {
@@ -167,7 +167,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		ai_will_do = {
-			factor = 100
+			factor = 1000
 		}
 
 		search_filters = {FOCUS_FILTER_STABILITY}	
@@ -387,7 +387,7 @@ focus_tree = {
 
 		cost = 10
 		ai_will_do = {
-			factor = 5
+			factor = 10
 		}
 
 		# search_filters = {FOCUS_FILTER_STABILITY}	
@@ -420,7 +420,7 @@ focus_tree = {
 
 		cost = 5
 		ai_will_do = {
-			factor = 5
+			factor = 10
 		}
 
 		# search_filters = {FOCUS_FILTER_STABILITY}	
@@ -512,7 +512,7 @@ focus_tree = {
 
 		cost = 10
 		ai_will_do = {
-			factor = 5
+			factor = 10
 		}
 
 		completion_reward = {
@@ -701,7 +701,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BYZ_empire_strikes_back
+		id = BYZ_eliminate_bulgaria
 		icon = GFX_goal_generic_construct_civ_factory
 
 		x = -1
@@ -716,10 +716,48 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_named_threat = { threat = 5 name = byzantine.3.t }
 			create_wargoal = {
 				type = annex_everything
-				target = AFC
+				target = BUL
 				expire = 0
+			}
+		}
+	}
+
+	focus = {
+		id = BYZ_integrate_bulgaria
+		icon = GFX_goal_generic_construct_civ_factory
+
+		x = 0
+		y = 1
+		relative_position_id = BYZ_eliminate_bulgaria
+		prerequisite = { focus = BYZ_eliminate_bulgaria }
+
+		available = {
+			is_subject = no
+			NOT = {
+				has_war_with = BUL
+			}
+			OR = {
+				BUL = {
+					is_puppet_of = BYZ
+				}
+				BUL = {
+					exists = no
+				}
+			}
+		}
+
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BYZ_worker_shortage_alb_kos
+				add_idea = BYZ_worker_shortage_bul
 			}
 		}
 	}
