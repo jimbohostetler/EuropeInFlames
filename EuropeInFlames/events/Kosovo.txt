@@ -1,0 +1,59 @@
+###########################
+# Kosovo Events
+###########################
+
+add_namespace = kosovo
+# Fate of Kosovo
+country_event = {
+	id = kosovo.1
+	title = kosovo.1.t
+	desc = {
+		text = kosovo.1.d
+	}
+	picture = GFX_report_event_german_inspect_troops
+	
+	is_triggered_only = yes
+	
+	# Refuse
+	option = {
+		name = kosovo.1.a
+		ai_chance = { 
+			factor = 50
+		}
+
+		BYZ = { 
+			create_wargoal = {
+				type = annex_everything
+				target = KOS
+				expire = 0
+			}
+		}
+	}
+
+	# Accept
+	option = {
+		name = kosovo.1.b
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				any_other_country = {
+					is_major = yes
+					OR = {
+						has_guaranteed = KOS
+						is_in_faction_with = KOS
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				is_puppet = yes
+			} 
+		}
+
+		BYZ = {		
+			puppet = KOS
+		}
+	}
+}

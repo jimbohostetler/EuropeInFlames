@@ -329,7 +329,7 @@ ideas = {
 			}
 		}
 
-		BYZ_worker_shortage_pope = {
+		BYZ_worker_shortage_2 = {
 			picture = FRA_factory_strikes
 			allowed = {
 				original_tag = BYZ
@@ -346,6 +346,66 @@ ideas = {
 				conscription_factor = -0.40
 				industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = -0.1
+			}
+		}
+
+		BYZ_worker_shortage_alb = {
+			picture = FRA_factory_strikes
+			allowed = {
+				original_tag = BYZ
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.40
+				industrial_capacity_factory = -0.075
+				industrial_capacity_dockyard = -0.075
+			}
+		}
+
+		BYZ_worker_shortage_kos = {
+			picture = FRA_factory_strikes
+			allowed = {
+				original_tag = BYZ
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.40
+				industrial_capacity_factory = -0.075
+				industrial_capacity_dockyard = -0.075
+			}
+		}
+
+		BYZ_worker_shortage_alb_kos = {
+			picture = FRA_factory_strikes
+			allowed = {
+				original_tag = BYZ
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.40
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
 			}
 		}
 

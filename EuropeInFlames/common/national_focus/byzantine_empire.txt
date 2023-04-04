@@ -482,7 +482,7 @@ focus_tree = {
 
 		cost = 5
 		ai_will_do = {
-			factor = 20
+			factor = 5
 		}
 
 		# search_filters = {FOCUS_FILTER_STABILITY}	
@@ -499,14 +499,14 @@ focus_tree = {
 	}
 
 	##############################
-	# Manpower Focus Path
+	# Manpower and war Focus Path
 	##############################
 
 	focus = {
 		id = BYZ_ask_the_pope
 		icon = GFX_goal_generic_construct_civ_factory
 
-		x = 10
+		x = 11
 		y = 0
 		relative_position_id = BYZ_a_public_funeral
 
@@ -520,6 +520,206 @@ focus_tree = {
 				country_event = {
 					id = papal.1 hours = 6
 				}
+			}
+		}
+	}
+
+	focus = {
+		id = BYZ_secure_albanian_support
+		icon = GFX_goal_generic_construct_civ_factory
+
+		x = -1
+		y = 1
+		relative_position_id = BYZ_ask_the_pope
+		prerequisite = { focus = BYZ_ask_the_pope }
+
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_named_threat = { threat = 1 name = byzantine.1.t }
+			ALB = {
+				country_event = {
+					id = albania.1 hours = 6
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BYZ_integrate_albania
+		icon = GFX_goal_generic_construct_civ_factory
+
+		x = 0
+		y = 1
+		relative_position_id = BYZ_secure_albanian_support
+		prerequisite = { focus = BYZ_secure_albanian_support }
+
+		available = {
+			is_subject = no
+			NOT = {
+				has_war_with = ALB
+			}
+			OR = {
+				ALB = {
+					is_puppet_of = BYZ
+				}
+				ALB = {
+					exists = no
+				}
+			}
+		}
+
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			44 = {
+				if = {
+					limit = { is_owned_by = BYZ }
+
+					effect_tooltip = {
+						add_core_of = BYZ
+					}
+					add_core_of = BYZ
+				}
+			}
+
+			if = {
+				limit = {
+					has_completed_focus = BYZ_integrate_kosovo
+				}
+				swap_ideas = {
+					remove_idea = BYZ_worker_shortage_kos
+					add_idea = BYZ_worker_shortage_alb_kos
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = BYZ_integrate_kosovo
+					}
+				}
+				swap_ideas = {
+					remove_idea = BYZ_worker_shortage_2
+					add_idea = BYZ_worker_shortage_alb
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BYZ_secure_kosovo_support
+		icon = GFX_goal_generic_construct_civ_factory
+
+		x = 1
+		y = 1
+		relative_position_id = BYZ_ask_the_pope
+		prerequisite = { focus = BYZ_ask_the_pope }
+
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_named_threat = { threat = 1 name = byzantine.2.t }
+			KOS = {
+				country_event = {
+					id = kosovo.1 hours = 6
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BYZ_integrate_kosovo
+		icon = GFX_goal_generic_construct_civ_factory
+
+		x = 0
+		y = 1
+		relative_position_id = BYZ_secure_kosovo_support
+		prerequisite = { focus = BYZ_secure_kosovo_support }
+
+		available = {
+			is_subject = no
+			NOT = {
+				has_war_with = KOS
+			}
+			OR = {
+				KOS = {
+					is_puppet_of = BYZ
+				}
+				KOS = {
+					exists = no
+				}
+			}
+		}
+
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			802 = {
+				if = {
+					limit = { is_owned_by = BYZ }
+
+					effect_tooltip = {
+						add_core_of = BYZ
+					}
+					add_core_of = BYZ
+				}
+			}
+
+			if = {
+				limit = {
+					has_completed_focus = BYZ_integrate_albania
+				}
+				swap_ideas = {
+					remove_idea = BYZ_worker_shortage_alb
+					add_idea = BYZ_worker_shortage_alb_kos
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = BYZ_integrate_albania
+					}
+				}
+				swap_ideas = {
+					remove_idea = BYZ_worker_shortage_2
+					add_idea = BYZ_worker_shortage_kos
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BYZ_empire_strikes_back
+		icon = GFX_goal_generic_construct_civ_factory
+
+		x = -1
+		y = 1
+		relative_position_id = BYZ_integrate_kosovo
+		prerequisite = { focus = BYZ_integrate_kosovo }
+		prerequisite = { focus = BYZ_integrate_albania }
+
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = AFC
+				expire = 0
 			}
 		}
 	}
