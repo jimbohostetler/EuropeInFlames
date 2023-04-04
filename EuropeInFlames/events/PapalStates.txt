@@ -31,7 +31,7 @@ country_event = {
 			}
 
 			hidden_effect = {
-				news_event = { id = my_news_event.1 hours = 2 }
+				news_event = { id = byzantine_news_event.1 hours = 2 }
 			}
 		}
 	}
@@ -44,18 +44,18 @@ country_event = {
 		}
 
 		BYZ = {
-			add_timed_idea = {
-				idea = BYZ_paying_the_vatican
-				days = 180
-			}
-
 			swap_ideas = {
 				remove_idea = BYZ_worker_shortage
 				add_idea = BYZ_worker_shortage_pope
 			}
 
+			add_timed_idea = {
+				idea = BYZ_paying_the_vatican
+				days = 180
+			}
+
 			hidden_effect = {
-				news_event = { id = my_news_event.1 hours = 2 }
+				news_event = { id = byzantine_news_event.2 hours = 2 }
 			}
 		}
 	}
