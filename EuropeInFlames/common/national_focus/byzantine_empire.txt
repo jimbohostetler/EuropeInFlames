@@ -506,7 +506,7 @@ focus_tree = {
 		id = BYZ_ask_the_pope
 		icon = GFX_goal_generic_construct_civ_factory
 
-		x = 10
+		x = 11
 		y = 0
 		relative_position_id = BYZ_a_public_funeral
 
@@ -528,7 +528,7 @@ focus_tree = {
 		id = BYZ_secure_albanian_support
 		icon = GFX_goal_generic_construct_civ_factory
 
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = BYZ_ask_the_pope
 		prerequisite = { focus = BYZ_ask_the_pope }
@@ -579,10 +579,10 @@ focus_tree = {
 		id = BYZ_secure_kosovo_support
 		icon = GFX_goal_generic_construct_civ_factory
 
-		x = 0
+		x = 1
 		y = 1
-		relative_position_id = BYZ_integrate_albania
-		prerequisite = { focus = BYZ_integrate_albania }
+		relative_position_id = BYZ_ask_the_pope
+		prerequisite = { focus = BYZ_ask_the_pope }
 
 		cost = 10
 		ai_will_do = {
@@ -631,10 +631,11 @@ focus_tree = {
 		id = BYZ_empire_strikes_back
 		icon = GFX_goal_generic_construct_civ_factory
 
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = BYZ_integrate_kosovo
 		prerequisite = { focus = BYZ_integrate_kosovo }
+		prerequisite = { focus = BYZ_integrate_albania }
 
 		cost = 10
 		ai_will_do = {
@@ -642,11 +643,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			effect_tooltip = {
-				create_wargoal = {
-					type = annex_everything
-					target = AFC
-				}
+			create_wargoal = {
+				type = annex_everything
+				target = AFC
+				expire = 0
 			}
 		}
 	}

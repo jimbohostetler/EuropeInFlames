@@ -22,11 +22,10 @@ country_event = {
 		}
 
 		BYZ = { 
-			effect_tooltip = {
-				create_wargoal = {
-					type = annex_everything
-					target = KOS
-				}
+			create_wargoal = {
+				type = annex_everything
+				target = KOS
+				expire = 0
 			}
 		}
 	}
