@@ -23,7 +23,7 @@ country_event = {
 		BYZ = {
 			swap_ideas = {
 				remove_idea = BYZ_worker_shortage
-				add_idea = BYZ_worker_shortage_pope
+				add_idea = BYZ_worker_shortage_2
 			}
 
 			add_opinion_modifier = {
@@ -46,7 +46,7 @@ country_event = {
 		BYZ = {
 			swap_ideas = {
 				remove_idea = BYZ_worker_shortage
-				add_idea = BYZ_worker_shortage_pope
+				add_idea = BYZ_worker_shortage_2
 			}
 
 			add_timed_idea = {

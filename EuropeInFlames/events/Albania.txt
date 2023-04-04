@@ -1,0 +1,60 @@
+###########################
+# Albania Events
+###########################
+
+add_namespace = albania
+# Fate of Albania
+country_event = {
+	id = albania.1
+	title = albania.1.t
+	desc = {
+		text = albania.1.d
+	}
+	picture = GFX_report_event_german_inspect_troops
+	
+	is_triggered_only = yes
+	
+	# Refuse
+	option = {
+		name = albania.1.a
+		ai_chance = { 
+			factor = 50
+		}
+
+		BYZ = { 
+			effect_tooltip = {
+				create_wargoal = {
+					type = annex_everything
+					target = ALB
+				}
+			}
+		}
+	}
+
+	# Accept
+	option = {
+		name = albania.1.b
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				any_other_country = {
+					is_major = yes
+					OR = {
+						has_guaranteed = ALB
+						is_in_faction_with = ALB
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				is_puppet = yes
+			} 
+		}
+
+		BYZ = {		
+			puppet = ALB
+		}
+	}
+}
