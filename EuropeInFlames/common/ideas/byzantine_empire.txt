@@ -329,6 +329,26 @@ ideas = {
 			}
 		}
 
+		BYZ_worker_shortage_pope = {
+			picture = FRA_factory_strikes
+			allowed = {
+				original_tag = BYZ
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.40
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+			}
+		}
+
 		BYZ_chariot_payment = {
 			allowed = {
 				always = no
@@ -354,6 +374,20 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.1
+			}
+		}
+
+		BYZ_paying_the_vatican = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.05
 			}
 		}
 

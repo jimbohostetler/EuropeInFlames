@@ -1,0 +1,67 @@
+###########################
+# Byzantine Empire Events
+###########################
+
+add_namespace = byzantine_news_event
+# Pope Manpower Yes
+news_event = {
+    id = byzantine_news_event.1
+    title = {
+        text = byzantine_news_event.1.t
+    }
+    desc = {
+        text = byzantine_news_event.1.desc
+    }
+    
+    picture = GFX_my_news_event_picture
+    
+    is_triggered_only = yes
+    major = yes
+
+    option = {
+        name = my_news_event.1.a
+        trigger = {
+            TAG = BYZ
+        }
+    }
+    option = {
+        name = my_news_event.1.b
+		trigger = {
+			NOT = {
+				TAG = BYZ
+			}
+		}
+    }
+    
+}
+
+# Pope Manpower Conditional
+news_event = {
+    id = byzantine_news_event.2
+    title = {
+        text = byzantine_news_event.2.t
+    }
+    desc = {
+        text = byzantine_news_event.2.desc
+    }
+    
+    picture = GFX_my_news_event_picture
+    
+    is_triggered_only = yes
+    major = yes
+
+    option = {
+        name = my_news_event.2.a
+        trigger = {
+            TAG = BYZ
+        }
+    }
+    option = {
+        name = my_news_event.2.b
+		trigger = {
+			NOT = {
+				TAG = BYZ
+			}
+		}
+    }
+}
