@@ -13,7 +13,7 @@ bookmarks = {
 			ideas = {
 				BYZ_worker_shortage
 				BYZ_bulwark_against_islam
-				BYZ_orthodox
+				orthodox_idea
 			}
 			focuses = {
 				BYZ_court_the_legions
@@ -26,7 +26,7 @@ bookmarks = {
 			history = "AFC_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
-
+				islam_idea
 			}
 			focuses = {
 

@@ -52,6 +52,13 @@ country_event = {
 			} 
 		}
 
+		KOS = {
+			swap_ideas = {
+				remove_idea = tengri_idea
+				add_idea = orthodox_enforced_idea
+			}
+		}
+
 		BYZ = {		
 			puppet = KOS
 		}

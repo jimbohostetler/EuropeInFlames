@@ -52,6 +52,13 @@ country_event = {
 			} 
 		}
 
+		ALB = {
+			swap_ideas = {
+				remove_idea = tengri_idea
+				add_idea = orthodox_enforced_idea
+			}
+		}
+
 		BYZ = {		
 			puppet = ALB
 		}

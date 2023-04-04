@@ -5,6 +5,10 @@ oob = "KOS_1936"
 set_research_slots = 3
 give_guarantee = MNT
 
+add_ideas = {
+	tengri_idea
+}
+
 # Starting tech
 # clone of Yugoslavia
 set_technology = {

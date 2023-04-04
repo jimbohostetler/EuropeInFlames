@@ -2696,6 +2696,18 @@
  CAN_true_revolution:0 "True Revolution"
 
 ##### EIF
+ orthodox_idea:0 "Orthodox Nation"
+ orthodox_idea_desc:0 "A strong majority of this nation are of the Orthodox faith."
+ orthodox_enforced_idea:0 "Orthodox Enforced"
+ orthodox_enforced_idea_desc:0 "The people of this nation have the Orthodox faith mandated by an overlord."
+ catholic_idea:0 "Catholic Nation"
+ catholic_idea_desc:0 "A strong majority of this nation are of the Catholic faith."
+ islam_idea:0 "Islamic Nation"
+ islam_idea_desc:0 "A strong majority of this nation are of the Islamic faith."
+ tengri_idea:0 "Tengri Nation"
+ tengri_idea_desc:0 "A strong majority of this nation are of the Tengri faith."
+
+##### EIF BYZ
  BYZ_bulwark_against_islam:0 "Bulwark Against Islam"
  BYZ_bulwark_against_islam_desc:0 "The Byzantine Empire has shielded Europe from Islam for over a thousand years."
  BYZ_chariot_payment:0 "Paying for Chariot Races"
@@ -2704,5 +2716,3 @@
  BYZ_worker_shortage_desc:0 "Centuries of warfare have seen entire generations of young men lost rather than entering the work force."
  BYZ_no_air_force:0 "No Air Force"
  BYZ_no_air_force_desc:0 "The Byzantine Empire has neglected it's airfoce entirely."
- BYZ_orthodox:0 "Orthodox Nation"
- BYZ_orthodox_desc:0 "A strong majority of this nation are of the Orthodox faith."

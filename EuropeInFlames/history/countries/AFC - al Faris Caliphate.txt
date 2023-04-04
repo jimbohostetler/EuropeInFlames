@@ -42,6 +42,7 @@ set_popularities = {
 
 add_ideas = {
 	# limited_conscription
+	islam_idea
 }
 
 if = {
