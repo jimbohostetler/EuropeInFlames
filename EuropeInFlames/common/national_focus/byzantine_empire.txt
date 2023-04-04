@@ -539,6 +539,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_named_threat = { threat = 1 name = byzantine.1.t }
 			ALB = {
 				country_event = {
 					id = albania.1 hours = 6
@@ -587,9 +588,26 @@ focus_tree = {
 					add_core_of = BYZ
 				}
 			}
-			swap_ideas = {
-				remove_idea = BYZ_worker_shortage_2
-				add_idea = BYZ_worker_shortage_3
+
+			if = {
+				limit = {
+					has_completed_focus = BYZ_integrate_kosovo
+				}
+				swap_ideas = {
+					remove_idea = BYZ_worker_shortage_kos
+					add_idea = BYZ_worker_shortage_alb_kos
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = BYZ_integrate_kosovo
+					}
+				}
+				swap_ideas = {
+					remove_idea = BYZ_worker_shortage_2
+					add_idea = BYZ_worker_shortage_alb
+				}
 			}
 		}
 	}
@@ -609,6 +627,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_named_threat = { threat = 1 name = byzantine.2.t }
 			KOS = {
 				country_event = {
 					id = kosovo.1 hours = 6
@@ -658,9 +677,25 @@ focus_tree = {
 				}
 			}
 
-			swap_ideas = {
-				remove_idea = BYZ_worker_shortage_3
-				add_idea = BYZ_worker_shortage_4
+			if = {
+				limit = {
+					has_completed_focus = BYZ_integrate_albania
+				}
+				swap_ideas = {
+					remove_idea = BYZ_worker_shortage_alb
+					add_idea = BYZ_worker_shortage_alb_kos
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = BYZ_integrate_albania
+					}
+				}
+				swap_ideas = {
+					remove_idea = BYZ_worker_shortage_2
+					add_idea = BYZ_worker_shortage_kos
+				}
 			}
 		}
 	}
