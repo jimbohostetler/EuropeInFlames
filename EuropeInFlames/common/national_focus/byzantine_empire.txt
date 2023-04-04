@@ -565,6 +565,10 @@ focus_tree = {
 			44 = {
 				if = {
 					limit = { is_owned_by = BYZ }
+
+					effect_tooltip = {
+						add_core_of = BYZ
+					}
 					add_core_of = BYZ
 				}
 			}
@@ -616,6 +620,10 @@ focus_tree = {
 			802 = {
 				if = {
 					limit = { is_owned_by = BYZ }
+
+					effect_tooltip = {
+						add_core_of = BYZ
+					}
 					add_core_of = BYZ
 				}
 			}
