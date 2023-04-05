@@ -2376,3 +2376,8 @@ l_english:
 
  BYZ_ask_the_pope:0 "Ask the Pope for soldiers"
  BYZ_ask_the_pope_desc:0 "It is plain to see that Christendom must stand united.  Perhaps the Pope can advocate for Catholic Parishes to send us levies to reinforce our legions."
+
+ BYZ_ease_defense:0 "Ease our defenses"
+ BYZ_ease_defense_desc:0 "We must ease the burden placed on the Greek people.  A more tempered approach to defense is needed."
+ BYZ_raise_defense:0 "Raise our defenses"
+ BYZ_raise_defense_desc:0 "We will not relent.  All of Europe and Christendom relies on our steadfast defense!"
