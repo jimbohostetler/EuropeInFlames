@@ -2716,3 +2716,6 @@
  BYZ_worker_shortage_desc:0 "Centuries of warfare have seen entire generations of young men lost rather than entering the work force."
  BYZ_no_air_force:0 "No Air Force"
  BYZ_no_air_force_desc:0 "The Byzantine Empire has neglected it's airfoce entirely."
+
+ PAP_byzantine_gold:0 "Byzantine Gold"
+ PAP_byzantine_gold_desc:0 "The Greeks have proivided generously for our recommendation to send men."

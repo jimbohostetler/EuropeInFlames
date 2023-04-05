@@ -2373,3 +2373,6 @@ l_english:
  BYZ_address_the_senate_desc:0 "Though the legislative body does not hold the power that it did in the days of the republic, the noble men of the Roman Senate still hold significant sway."
  BYZ_host_chariot_races:0 "Host Chariot Races"
  BYZ_host_chariot_races_desc:0 "We need to convince the masses that this basileus will lavishly provide."
+
+ BYZ_ask_the_pope:0 "Ask the Pope for soldiers"
+ BYZ_ask_the_pope_desc:0 "It is plain to see that Christendom must stand united.  Perhaps the Pope can advocate for Catholic Parishes to send us levies to reinforce our legions."

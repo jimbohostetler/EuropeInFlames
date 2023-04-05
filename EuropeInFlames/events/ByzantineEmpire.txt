@@ -65,3 +65,128 @@ news_event = {
 		}
     }
 }
+
+# Albania Yes
+news_event = {
+    id = byzantine_news_event.3
+    title = {
+        text = byzantine_news_event.3.t
+    }
+    desc = {
+        text = byzantine_news_event.3.desc
+    }
+    
+    picture = GFX_my_news_event_picture
+    
+    is_triggered_only = yes
+    major = yes
+
+    option = {
+        name = my_news_event.3.a
+        trigger = {
+            TAG = BYZ
+        }
+    }
+    option = {
+        name = my_news_event.3.b
+        trigger = {
+            NOT = {
+                TAG = BYZ
+            }
+        }
+    }
+}
+
+# Albania No
+news_event = {
+    id = byzantine_news_event.4
+    title = {
+        text = byzantine_news_event.4.t
+    }
+    desc = {
+        text = byzantine_news_event.4.desc
+    }
+    
+    picture = GFX_my_news_event_picture
+    
+    is_triggered_only = yes
+    major = yes
+
+    option = {
+        name = my_news_event.4.a
+        trigger = {
+            TAG = BYZ
+        }
+    }
+    option = {
+        name = my_news_event.4.b
+        trigger = {
+            NOT = {
+                TAG = BYZ
+            }
+        }
+    }
+}
+
+# Kosovo Yes
+news_event = {
+    id = byzantine_news_event.5
+    title = {
+        text = byzantine_news_event.5.t
+    }
+    desc = {
+        text = byzantine_news_event.5.desc
+    }
+    
+    picture = GFX_my_news_event_picture
+    
+    is_triggered_only = yes
+    major = yes
+
+    option = {
+        name = my_news_event.5.a
+        trigger = {
+            TAG = BYZ
+        }
+    }
+    option = {
+        name = my_news_event.5.b
+        trigger = {
+            NOT = {
+                TAG = BYZ
+            }
+        }
+    }
+}
+
+# Kosovo No
+news_event = {
+    id = byzantine_news_event.6
+    title = {
+        text = byzantine_news_event.6.t
+    }
+    desc = {
+        text = byzantine_news_event.6.desc
+    }
+    
+    picture = GFX_my_news_event_picture
+    
+    is_triggered_only = yes
+    major = yes
+
+    option = {
+        name = my_news_event.6.a
+        trigger = {
+            TAG = BYZ
+        }
+    }
+    option = {
+        name = my_news_event.6.b
+        trigger = {
+            NOT = {
+                TAG = BYZ
+            }
+        }
+    }
+}
+

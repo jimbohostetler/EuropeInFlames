@@ -27,6 +27,10 @@ country_event = {
 				target = KOS
 				expire = 0
 			}
+
+			hidden_effect = {
+				news_event = { id = byzantine_news_event.6 hours = 2 }
+			}
 		}
 	}
 
@@ -61,6 +65,10 @@ country_event = {
 
 		BYZ = {		
 			puppet = KOS
+
+			hidden_effect = {
+				news_event = { id = byzantine_news_event.5 hours = 2 }
+			}
 		}
 	}
 }

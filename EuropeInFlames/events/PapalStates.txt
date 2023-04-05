@@ -17,7 +17,7 @@ country_event = {
 	option = {
 		name = papal.1.a
 		ai_chance = {
-			factor = 75
+			factor = 25
 		}
 	
 		BYZ = {
@@ -40,7 +40,14 @@ country_event = {
 	option = {
 		name = papal.1.b
 		ai_chance = {	
-			factor = 25
+			factor = 75
+		}
+
+		PAP = {
+			add_timed_idea = {
+				idea = PAP_byzantine_gold
+				days = 180
+			}
 		}
 
 		BYZ = {
