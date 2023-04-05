@@ -761,4 +761,54 @@ focus_tree = {
 			}
 		}
 	}
+
+	##############################
+	# Defense Focus Path
+	##############################
+
+	focus = {
+		id = BYZ_ease_defense
+		icon = GFX_goal_generic_construct_civ_factory
+
+		x = 14
+		y = 0
+		relative_position_id = BYZ_a_public_funeral
+
+		mutually_exclusive = { focus = BYZ_raise_defense }
+
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BYZ_bulwark_against_islam
+				add_idea = BYZ_bulwark_against_islam_eased
+			}
+		}
+	}
+
+	focus = {
+		id = BYZ_raise_defense
+		icon = GFX_goal_generic_construct_civ_factory
+
+		x = 16
+		y = 0
+		relative_position_id = BYZ_a_public_funeral
+
+		mutually_exclusive = { focus = BYZ_ease_defense }
+
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BYZ_bulwark_against_islam
+				add_idea = BYZ_bulwark_against_islam_raised
+			}
+		}
+	}
 }

@@ -24,6 +24,54 @@ ideas = {
 			}
 		}
 
+		BYZ_bulwark_against_islam_eased = {
+			allowed = {
+				original_tag = BYZ
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_fortify_the_borders
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = 0.05
+				conscription = 0.005
+				army_morale_factor = 0.05
+				army_core_defence_factor = 0.1
+				production_speed_bunker_factor = 0.2
+				production_speed_coastal_bunker_factor = 0.2
+			}
+		}
+
+		BYZ_bulwark_against_islam_raised = {
+			allowed = {
+				original_tag = BYZ
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_fortify_the_borders
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				war_support_factor = 0.10
+				conscription = 0.01
+				army_morale_factor = 0.05
+				army_core_defence_factor = 0.1
+				production_speed_bunker_factor = 0.2
+				production_speed_coastal_bunker_factor = 0.2
+			}
+		}
+
 		BYZ_no_air_force = {
 			allowed = {
 				original_tag = BYZ
