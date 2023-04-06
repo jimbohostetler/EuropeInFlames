@@ -2382,6 +2382,12 @@ l_english:
  BYZ_cas_focus_desc:0 "Adapting our fighter design into a close air support design should be fairly strightforward with our recent air advances."
  BYZ_air_fighter_focus:0 "Fighter Focus"
  BYZ_air_fighter_focus_desc:0 "Our new fighters will be the pride of Constantinople!"
+ BYZ_medium_air_focus:0 "Medium Air Focus"
+ BYZ_medium_air_focus_desc:0 "We should be able to develop larger air frames for battlefield support, strategic bombing, or even air-to-air combat."
+ BYZ_heavy_air_focus:0 "Heavy Air Focus"
+ BYZ_heavy_air_focus_desc:0 "As our knowledge continues to increase, we should be able to produce massive air frames capable of bombing at extreme distances."
+ BYZ_mature_air_focus:0 "A Mature Air Force"
+ BYZ_mature_air_focus_desc:0 "Our air force has truly entered the modern age."
 
  BYZ_capitol_infra:0 "Constantinople Infrastructure"
  BYZ_capitol_infra_desc:0 "We need to modernize our capital if we hope to bring about change.  Our industry will be jump-started to facilitate a great leap forward."
