@@ -2734,6 +2734,8 @@
  BYZ_worker_shortage_alb_kos_desc:0 "Centuries of warfare have seen entire generations of young men lost that would have than endered the work force or served in the legions."
  BYZ_worker_shortage_bul:0 "Recovering manpower shortage"
  BYZ_worker_shortage_bul_desc:0 "Our recent integrations have improved the manpower shortage, but we are still lacking some men required to ender the work force or serve in the legions."
+ BYZ_worker_shortage_cath:0 "Recovering manpower shortage"
+ BYZ_worker_shortage_cath_desc:0 "Our recent integrations have improved the manpower shortage, but we are still lacking some men required to ender the work force or serve in the legions."
 
  BYZ_no_air_force:0 "No Air Force"
  BYZ_no_air_force_desc:0 "The Byzantine Empire has neglected it's airfoce entirely."

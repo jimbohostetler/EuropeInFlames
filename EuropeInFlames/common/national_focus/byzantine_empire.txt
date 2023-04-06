@@ -769,6 +769,95 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = BYZ_christendom_united
+		icon = GFX_goal_generic_construct_civ_factory
+
+		x = 1
+		y = 1
+		relative_position_id = BYZ_integrate_bulgaria
+		prerequisite = { focus = BYZ_integrate_bulgaria }
+
+		mutually_exclusive = { focus = BYZ_orthodoxy_alone }
+
+		cost = 5
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			create_faction = UnitedCristendom
+			add_to_faction = BYZ
+			add_to_faction = PAP
+
+
+			swap_ideas = {
+				remove_idea = BYZ_worker_shortage_bul
+				add_idea = BYZ_worker_shortage_cath
+			}
+		}
+	}
+
+	focus = {
+		id = BYZ_orthodoxy_alone
+		icon = GFX_focus_ITA_blackshirts
+
+		x = -1
+		y = 1
+		relative_position_id = BYZ_integrate_bulgaria
+		prerequisite = { focus = BYZ_integrate_bulgaria }
+
+		mutually_exclusive = { focus = BYZ_christendom_united }
+
+		cost = 5
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			add_war_support = 0.10
+
+			random_controlled_state = { #Create a few more Divs
+				limit = {
+					is_core_of = ROOT
+					is_fully_controlled_by = ROOT
+				}
+				prioritize = { 2 }
+				custom_effect_tooltip = ITA_strengthen_the_blackshirts_spawn_divs_tt
+				hidden_effect = {
+					create_unit = {
+						division = "division_template = \"Legion\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						owner = ROOT
+						count = 1
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BYZ_strike_at_the_enemy
+		icon = GFX_focus_ITA_blackshirts
+
+		x = 1
+		y = 1
+		relative_position_id = BYZ_orthodoxy_alone
+		prerequisite = { focus = BYZ_orthodoxy_alone focus = BYZ_christendom_united }
+
+		cost = 5
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = AFC
+				expire = 0
+			}
+		}
+	}
+
 	##############################
 	# Defense Focus Path
 	##############################
