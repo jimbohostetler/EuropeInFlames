@@ -21,6 +21,10 @@ set_technology = {
 }
 
 recruit_character = BYZ_Basileus_Basil_IV
+recruit_character = BYZ_makis_barbiadis
+recruit_character = BYZ_erotas_karahaliides
+recruit_character = BYZ_markos_drakos
+recruit_character = BYZ_alexandros_papagos
 
 set_war_support = 0.1
 set_convoys = 50

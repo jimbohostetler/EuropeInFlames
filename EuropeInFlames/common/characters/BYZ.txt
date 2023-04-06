@@ -14,4 +14,147 @@ characters={
 			id=-1
 		}
 	}
+
+	BYZ_alexandros_papagos={
+		name=BYZ_alexandros_papagos
+		portraits={
+			army={
+				small="GFX_idea_gre_alexandros_papagos"
+				large="GFX_portrait_gre_alexandros_papagos"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = BYZ_alexandros_papagos_chief
+			available  = {
+				has_completed_focus  = BYZ_raise_defense
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = BYZ_alexandros_papagos_theorist
+			ledger = army
+			available  = {
+				has_completed_focus  = BYZ_raise_defense
+			}
+			traits = {
+				military_theorist
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+		field_marshal={
+			traits={ old_guard inflexible_strategist career_officer war_hero trait_mountaineer }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=300
+		}
+	}
+
+	BYZ_markos_drakos = {
+		name = BYZ_markos_drakoss
+		portraits = {
+			army = {
+				large="GFX_portrait_gre_markos_drakos"
+				small=GFX_portrait_GRE_markos_drakos_small
+			}
+		}
+
+		advisor = {
+			slot = high_command
+			idea_token = BYZ_markos_drakos
+			available  = {
+				has_completed_focus = BYZ_court_the_legions
+			}
+			ledger = army
+				allowed = {
+					original_tag = BYZ
+				}
+				traits = {
+					army_infantry_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	BYZ_erotas_karahaliides = {
+		name = BYZ_erotas_karahaliides
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_luigi_einaudi_small
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = BYZ_erotas_karahaliides
+
+			available  = {
+				has_completed_focus = BYZ_capitol_university
+			}
+
+			traits = {
+				financial_expert 
+			}
+			on_add = {
+			}
+			ai_will_do = {
+				base = 3.000
+			}
+		}
+	}
+
+	BYZ_makis_barbiadis = {
+		name = BYZ_makis_barbiadis
+		portraits = {
+			army = {
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = BYZ_makis_barbiadis
+
+			available  = {
+				has_completed_focus = BYZ_address_the_senate
+			}
+
+			traits = {
+				silent_workhorse
+			}
+			on_add = {
+			}
+			ai_will_do = {
+				base = 3.000
+			}
+		}
+	}
 }

@@ -1,6 +1,7 @@
 ﻿capital = 2
 
 oob = "PAP_1936"
+recruit_character = PAP_papa_pio_xi
 
 set_research_slots = 3
 set_stability = 0.5
