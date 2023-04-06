@@ -2706,6 +2706,8 @@
  islam_idea_desc:0 "A strong majority of this nation are of the Islamic faith."
  tengri_idea:0 "Tengri Nation"
  tengri_idea_desc:0 "A strong majority of this nation are of the Tengri faith."
+ zoroastrian_idea:0 "Zoroastrian Nation"
+ zoroastrian_idea_desc:0 "A strong majority of this nation are of the Zoroastrian faith."
 
 ##### EIF BYZ
  BYZ_bulwark_against_islam:0 "Bulwark Against Islam"

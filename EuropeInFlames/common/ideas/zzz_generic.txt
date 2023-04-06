@@ -1293,6 +1293,16 @@ ideas = {
 
 			picture = SOV_transformation_of_nature
 		}
+
+		zoroastrian_idea = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SOV_transformation_of_nature
+		}
 	}
 
 	# TECHNOLOGY

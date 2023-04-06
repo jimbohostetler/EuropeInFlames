@@ -770,6 +770,41 @@ focus_tree = {
 	}
 
 	focus = {
+		id = BYZ_marine_focus
+		icon = GFX_goal_generic_construct_naval_dockyard
+
+		x = 3
+		y = 1
+		relative_position_id = BYZ_integrate_bulgaria
+		prerequisite = { focus = BYZ_integrate_bulgaria }
+		prerequisite = { focus = BYZ_naval_focus }
+
+		cost = 10
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			if = {
+				limit = { not = { has_dlc = "Man the Guns" } }
+				set_technology = {
+					transport = 1
+					marines = 1
+					popup = yes
+				}
+			}
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				set_technology = {
+					mtg_transport = 1
+					marines = 1
+					popup = yes
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = BYZ_christendom_united
 		icon = GFX_goal_generic_construct_civ_factory
 
@@ -854,6 +889,34 @@ focus_tree = {
 				type = annex_everything
 				target = AFC
 				expire = 0
+			}
+		}
+	}
+
+	focus = {
+		id = BYZ_the_enemy_of_my_enemy
+		icon = GFX_focus_ITA_blackshirts
+
+		x = 0
+		y = 1
+		relative_position_id = BYZ_strike_at_the_enemy
+		prerequisite = { focus = BYZ_strike_at_the_enemy }
+
+		available = {
+			has_war_with = AFC
+		}
+
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			PER = {
+				declare_war_on = {
+					target = AFC
+					type = annex_everything
+				}
 			}
 		}
 	}
