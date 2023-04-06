@@ -323,7 +323,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		ai_will_do = {
-			factor = 20
+			factor = 5
 		}
 
 		completion_reward = {
@@ -426,7 +426,7 @@ focus_tree = {
 
 		cost = 5
 		ai_will_do = {
-			factor = 10
+			factor = 5
 		}
 
 		# search_filters = {FOCUS_FILTER_STABILITY}	
@@ -466,7 +466,7 @@ focus_tree = {
 
 		cost = 10
 		ai_will_do = {
-			factor = 50
+			factor = 10
 		}
 
 		# search_filters = {FOCUS_FILTER_STABILITY}	
@@ -486,7 +486,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BYZ_capitol_defense
 
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -519,7 +519,7 @@ focus_tree = {
 
 		cost = 10
 		ai_will_do = {
-			factor = 10
+			factor = 20
 		}
 
 		completion_reward = {
@@ -581,7 +581,7 @@ focus_tree = {
 
 		cost = 10
 		ai_will_do = {
-			factor = 5
+			factor = 10
 		}
 
 		completion_reward = {
@@ -669,7 +669,7 @@ focus_tree = {
 
 		cost = 10
 		ai_will_do = {
-			factor = 5
+			factor = 10
 		}
 
 		completion_reward = {
@@ -758,7 +758,7 @@ focus_tree = {
 
 		cost = 10
 		ai_will_do = {
-			factor = 5
+			factor = 10
 		}
 
 		completion_reward = {
@@ -781,7 +781,7 @@ focus_tree = {
 
 		cost = 10
 		ai_will_do = {
-			factor = 50
+			factor = 5
 		}
 
 		completion_reward = {
@@ -817,7 +817,7 @@ focus_tree = {
 
 		cost = 5
 		ai_will_do = {
-			factor = 50
+			factor = 20
 		}
 
 		completion_reward = {
@@ -846,7 +846,7 @@ focus_tree = {
 
 		cost = 5
 		ai_will_do = {
-			factor = 50
+			factor = 5
 		}
 
 		completion_reward = {
@@ -879,9 +879,9 @@ focus_tree = {
 		relative_position_id = BYZ_orthodoxy_alone
 		prerequisite = { focus = BYZ_orthodoxy_alone focus = BYZ_christendom_united }
 
-		cost = 5
+		cost = 10
 		ai_will_do = {
-			factor = 100
+			factor = 10
 		}
 
 		completion_reward = {
@@ -908,7 +908,7 @@ focus_tree = {
 
 		cost = 10
 		ai_will_do = {
-			factor = 100
+			factor = 20
 		}
 
 		completion_reward = {
@@ -937,7 +937,7 @@ focus_tree = {
 
 		cost = 5
 		ai_will_do = {
-			factor = 10
+			factor = 5
 		}
 
 		completion_reward = {
@@ -980,7 +980,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 25
+			factor = 5
 		}
 
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
@@ -1119,7 +1119,7 @@ focus_tree = {
 
 
 		ai_will_do = {
-			factor = 25	
+			factor = 10
 		}
 
 		bypass = {
