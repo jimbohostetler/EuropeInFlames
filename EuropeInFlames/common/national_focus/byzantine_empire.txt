@@ -308,7 +308,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BYZ_air_base_focus
+		id = BYZ_air_fighter_focus
 		icon = GFX_goal_generic_air_doctrine
 		prerequisite = { focus = BYZ_first_plane }
 		available = {
@@ -323,10 +323,16 @@ focus_tree = {
 		available_if_capitulated = no
 
 		ai_will_do = {
-			factor = 5
+			factor = 20
 		}
 
 		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = small_plane_airframe_0
+				amount = 20
+				variant_name = "Smolikas F-1"
+			}
+
 			if = {
 				limit = {
 					capital_scope = {
@@ -480,7 +486,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BYZ_capitol_defense
 
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 5
 		}
@@ -488,12 +494,13 @@ focus_tree = {
 		# search_filters = {FOCUS_FILTER_STABILITY}	
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = BYZ_railway_innovations
-				ahead_reduction = 1.5
-				bonus = 0.5
-				uses = 1
-				category = train_tech
+			set_technology = {
+				basic_train = 1
+				popup = yes
+			}
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = 5
 			}
 		}
 	}
