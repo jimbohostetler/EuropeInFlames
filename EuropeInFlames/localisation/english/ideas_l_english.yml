@@ -2738,6 +2738,8 @@
  BYZ_worker_shortage_bul_desc:0 "Our recent integrations have improved the manpower shortage, but we are still lacking some men required to ender the work force or serve in the legions."
  BYZ_worker_shortage_cath:0 "Recovering manpower shortage"
  BYZ_worker_shortage_cath_desc:0 "Our recent integrations have improved the manpower shortage, but we are still lacking some men required to ender the work force or serve in the legions."
+ BYZ_worker_shortage_orth:0 "Recovering manpower shortage"
+ BYZ_worker_shortage_orth_desc:0 "Our recent integrations have improved the manpower shortage, but we are still lacking some men required to ender the work force or serve in the legions."
 
  BYZ_no_air_force:0 "No Air Force"
  BYZ_no_air_force_desc:0 "The Byzantine Empire has neglected it's airfoce entirely."
@@ -2751,6 +2753,9 @@
  BYZ_infant_air_force_medium_desc:0 "Early air experimentation has begun."
  BYZ_infant_air_force_heavy:0 "Infant Air Force"
  BYZ_infant_air_force_heavy_desc:0 "Early air experimentation has begun."
+
+ BYZ_cataphract_idea:0 "Byzantine Cataphracts"
+ BYZ_cataphract_idea_desc:0 "Our heavy cavalry is unmatched."
 
  PAP_byzantine_gold:0 "Byzantine Gold"
  PAP_byzantine_gold_desc:0 "The Greeks have proivided generously for our recommendation to send men."

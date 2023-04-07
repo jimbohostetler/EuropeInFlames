@@ -2431,3 +2431,8 @@ l_english:
  BYZ_naval_focus_desc:0 "The expansion of our navy should be our first priority. Assign all available resources to new Dockyards and research into light surface ships."
  BYZ_production_focus:0 "Armament Focus"
  BYZ_production_focus_desc:0 "We must not allow our military production capacity to lag behind."
+ BYZ_war_economy:0 "War Economy"
+ BYZ_war_economy_desc:0 "If the people are behind us, we can turn the full weight of the Greek war machine on our enemies."
+
+ BYZ_cataphract_focus:0 "Cataphract Focus"
+ BYZ_cataphract_focus_desc:0 "The Cataphract has always been the strong hammer of the Byzantine army.  We should hone their skills to maximize their destructive capacity."

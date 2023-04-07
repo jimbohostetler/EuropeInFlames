@@ -49,6 +49,7 @@ set_popularities = {
 
 add_ideas = {
 	limited_conscription
+	limited_exports
 	BYZ_worker_shortage
 	BYZ_bulwark_against_islam
 	BYZ_no_air_force

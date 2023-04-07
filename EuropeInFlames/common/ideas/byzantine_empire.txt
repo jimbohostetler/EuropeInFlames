@@ -633,6 +633,25 @@ ideas = {
 			}
 		}
 
+		BYZ_worker_shortage_orth = {
+			picture = FRA_factory_strikes
+			allowed = {
+				original_tag = BYZ
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.20
+				non_core_manpower = 0.20
+			}
+		}
+
 		BYZ_chariot_payment = {
 			allowed = {
 				always = no
@@ -672,6 +691,21 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.05
+			}
+		}
+
+		BYZ_cataphract_idea = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ITA_hardened_irregular_bands
+			
+			modifier = {
+				modifier_army_sub_unit_cavalry_attack_factor = 0.15
+				modifier_army_sub_unit_cavalry_speed_factor = 0.05
 			}
 		}
 	}

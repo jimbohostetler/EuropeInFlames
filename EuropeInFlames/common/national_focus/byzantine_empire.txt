@@ -898,6 +898,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			#TODO: Need to give PAP a choice here, even if 100% for playability of PAP
 			create_faction = UnitedCristendom
 			add_to_faction = BYZ
 			add_to_faction = PAP
@@ -929,20 +930,9 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.10
 
-			random_controlled_state = { #Create a few more Divs
-				limit = {
-					is_core_of = ROOT
-					is_fully_controlled_by = ROOT
-				}
-				prioritize = { 2 }
-				custom_effect_tooltip = ITA_strengthen_the_blackshirts_spawn_divs_tt
-				hidden_effect = {
-					create_unit = {
-						division = "division_template = \"Legion\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-						owner = ROOT
-						count = 1
-					}
-				}
+			swap_ideas = {
+				remove_idea = BYZ_worker_shortage_bul
+				add_idea = BYZ_worker_shortage_orth
 			}
 		}
 	}
@@ -1018,6 +1008,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_popularity = { ideology = democratic popularity = 0.05 }
+
 			swap_ideas = {
 				remove_idea = BYZ_bulwark_against_islam
 				add_idea = BYZ_bulwark_against_islam_eased
@@ -1041,6 +1033,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_popularity = { ideology = fascism popularity = 0.05 }
+			
 			swap_ideas = {
 				remove_idea = BYZ_bulwark_against_islam
 				add_idea = BYZ_bulwark_against_islam_raised
@@ -1255,6 +1249,69 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+		}
+	}
+
+	focus = {
+		id = BYZ_war_economy
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = BYZ_production_focus }
+		x = 0
+		y = 1
+		relative_position_id = BYZ_production_focus
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = no
+		available = {
+			has_war_support > 0.49
+		}
+
+		bypass = { 
+			OR = {
+				has_idea = war_economy 
+				has_idea = tot_economic_mobilisation
+			}
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_popularity = { ideology = fascism popularity = 0.05 }
+			if = {
+				limit = {
+					NOT = { has_idea = war_economy }
+					NOT = { has_idea = tot_economic_mobilisation }
+				}
+				add_ideas = war_economy
+			}
+		}
+	}
+
+	##############################
+	# Army Focus Path
+	##############################
+
+	focus = {
+		id = BYZ_cataphract_focus
+		icon = GFX_focus_ITA_cavalry_charge
+		x = 18
+		y = 0
+		relative_position_id = BYZ_a_public_funeral
+		cost = 10
+
+		# search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_ideas = BYZ_cataphract_idea
 		}
 	}
 }
