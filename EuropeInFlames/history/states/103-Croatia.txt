@@ -8,7 +8,7 @@ state={
 
 
 	history={
-		owner = YUG
+		owner = LBV
 		victory_points = { #Dubrovnik
 			6889 3 
 		}
@@ -18,7 +18,7 @@ state={
 		buildings = {
 			infrastructure = 3
 			dockyard = 1
-			industrial_complex = 3
+			industrial_complex = 1
 			3924 = {
 				naval_base = 3
 			}
@@ -26,8 +26,6 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = YUG
-		#add_claim_by = ITA #added by focus
 		add_core_of = CRO
 	}
 
