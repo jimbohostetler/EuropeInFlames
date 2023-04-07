@@ -17,7 +17,6 @@ if = {
 
 if = {
 	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "GER_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
 			aa_cannon_1 = 1
@@ -32,7 +31,6 @@ if = {
 			iw_large_airframe = 1
 		}
 	else = {
-		set_air_oob = "GER_1936_air_legacy"
 		set_technology = {
 			early_fighter = 1
 			fighter1 = 1
@@ -361,17 +359,6 @@ create_import = {
 			basic_heavy_armor_scheme = 1
 		}
 		set_naval_oob = "GER_1939_naval_mtg"
-	}
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-			set_air_oob = "GER_1939_air_bba"
-		else = {
-			set_air_oob = "GER_1939_air_legacy"
-			set_technology = {
-				CAS2 = 1
-				heavy_fighter1 = 1
-			}
-		}
 	}
 }
 
