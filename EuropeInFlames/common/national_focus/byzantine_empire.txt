@@ -928,11 +928,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_war_support = 0.10
+			add_war_support = 0.05
 
 			swap_ideas = {
 				remove_idea = BYZ_worker_shortage_bul
-				add_idea = BYZ_worker_shortage_orth
+				add_idea = BYZ_worker_shortage_cath
 			}
 		}
 	}
@@ -1086,6 +1086,28 @@ focus_tree = {
 			799 = {
 				add_core_of = BYZ
 			}
+		}
+	}
+
+	focus = {
+		id = BYZ_recruit_from_the_provinces
+		icon = GFX_focus_ITA_mare_nostrum
+
+		x = -1
+		y = 1
+		relative_position_id = BYZ_renovatio_imperii_romanorum
+		prerequisite = { focus = BYZ_renovatio_imperii_romanorum }
+
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			add_popularity = { ideology = fascism popularity = 0.05 }
+			add_stability = -0.30
+			add_political_power = -50
+			remove_ideas = BYZ_worker_shortage_cath
 		}
 	}
 
@@ -1387,6 +1409,47 @@ focus_tree = {
 				}
 				add_ideas = war_economy
 			}
+		}
+	}
+
+	focus = {
+		id = BYZ_roman_defense
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 1
+		y = 1
+		relative_position_id = BYZ_renovatio_imperii_romanorum
+		prerequisite = { focus = BYZ_ease_defense focus = BYZ_raise_defense }
+		prerequisite = { focus = BYZ_renovatio_imperii_romanorum }
+		cost = 5
+
+		# search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = BYZ_raise_defense
+				}
+				swap_ideas = {
+					remove_idea = BYZ_bulwark_against_islam_raised
+					add_idea = BYZ_bulwark_raised_rome
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = BYZ_ease_defense
+				}
+				swap_ideas = {
+					remove_idea = BYZ_bulwark_against_islam_eased
+					add_idea = BYZ_bulwark_eased_rome
+				}
+			}
+			
 		}
 	}
 

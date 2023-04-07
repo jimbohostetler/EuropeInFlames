@@ -2716,6 +2716,10 @@
  BYZ_bulwark_against_islam_eased_desc:0 "The Byzantine Empire has shielded Europe from Islam for over a thousand years."
  BYZ_bulwark_against_islam_raised:0 "Bulwark Against Islam"
  BYZ_bulwark_against_islam_raised_desc:0 "The Byzantine Empire has shielded Europe from Islam for over a thousand years."
+ BYZ_bulwark_eased_rome:0 "Defense of Rome"
+ BYZ_bulwark_eased_rome_desc:0 "The Roman Empire is vast, we must be prepared to respond to threats across our vast Imperium."
+ BYZ_bulwark_raised_rome:0 "Defense of Rome"
+ BYZ_bulwark_raised_rome_desc:0 "The Roman Empire is vast, we must be prepared to respond to threats across our vast Imperium."
 
  BYZ_chariot_payment:0 "Paying for Chariot Races"
  BYZ_chariot_payment_desc:0 "Games of such a large magnitude will take some time to pay off."
@@ -2738,8 +2742,6 @@
  BYZ_worker_shortage_bul_desc:0 "Our recent integrations have improved the manpower shortage, but we are still lacking some men required to ender the work force or serve in the legions."
  BYZ_worker_shortage_cath:0 "Recovering manpower shortage"
  BYZ_worker_shortage_cath_desc:0 "Our recent integrations have improved the manpower shortage, but we are still lacking some men required to ender the work force or serve in the legions."
- BYZ_worker_shortage_orth:0 "Recovering manpower shortage"
- BYZ_worker_shortage_orth_desc:0 "Our recent integrations have improved the manpower shortage, but we are still lacking some men required to ender the work force or serve in the legions."
 
  BYZ_no_air_force:0 "No Air Force"
  BYZ_no_air_force_desc:0 "The Byzantine Empire has neglected it's airfoce entirely."

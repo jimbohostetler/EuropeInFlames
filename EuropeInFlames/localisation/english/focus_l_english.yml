@@ -2426,11 +2426,16 @@ l_english:
  BYZ_imperator_desc:0 "After defeating the Caliphate, Basil IV has proven himself to be more than a mere Basileus.  He is truly an Imperator of old."
  BYZ_renovatio_imperii_romanorum:0 "Renovatio Imperii Romanorum"
  BYZ_renovatio_imperii_romanorum_desc:0 "Having reclaimed rightful Roman lands in the east as well as Alexandria, the Roman Empire can once again take it's place as the preeminent power of the Mediterranean."
+ BYZ_recruit_from_the_provinces:0 "Recruit From The Provinces"
+ BYZ_recruit_from_the_provinces_desc:0 "We finally have the population to grow our legions to their rightful size.  The provincials may not be happy with their service, but they will learn to serve the Imperium."
 
  BYZ_ease_defense:0 "Ease our defenses"
  BYZ_ease_defense_desc:0 "We must ease the burden placed on the Greek people.  A more tempered approach to defense is needed."
  BYZ_raise_defense:0 "Raise our defenses"
  BYZ_raise_defense_desc:0 "We will not relent.  All of Europe and Christendom relies on our steadfast defense!"
+ BYZ_roman_defense:0 "Roman Territorial Defense"
+ BYZ_roman_defense_desc:0 "With our territorial growth, we must adopt a new, dynamic defense strategy.  Out borders are too long to fortify, we must rapidly respond to incursions rather than holding fortifications."
+
  BYZ_naval_focus:0 "Naval Focus"
  BYZ_naval_focus_desc:0 "The expansion of our navy should be our first priority. Assign all available resources to new Dockyards and research into light surface ships."
  BYZ_production_focus:0 "Armament Focus"
