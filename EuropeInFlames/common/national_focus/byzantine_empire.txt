@@ -92,6 +92,9 @@ focus_tree = {
 					add = inexperienced_basileus_legion
 				}
 			}
+
+			custom_effect_tooltip = available_theorist
+			show_ideas_tooltip = BYZ_markos_drakos
 		}
 	}
 
@@ -144,6 +147,9 @@ focus_tree = {
 					add = inexperienced_basileus_senate
 				}
 			}
+
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = BYZ_makis_barbiadis
 		}
 	}
 
@@ -542,6 +548,9 @@ focus_tree = {
 		completion_reward = {
 			add_research_slot = 1
 			add_timed_idea = { idea = BYZ_funding_new_university days = 180 }
+
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = BYZ_erotas_karahaliides
 		}
 	}
 
@@ -579,7 +588,7 @@ focus_tree = {
 
 	focus = {
 		id = BYZ_ask_the_pope
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_support_democracy
 
 		x = 11
 		y = 0
@@ -874,7 +883,7 @@ focus_tree = {
 
 	focus = {
 		id = BYZ_christendom_united
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_support_fascism
 
 		x = 1
 		y = 1
@@ -1036,6 +1045,9 @@ focus_tree = {
 				remove_idea = BYZ_bulwark_against_islam
 				add_idea = BYZ_bulwark_against_islam_raised
 			}
+
+			custom_effect_tooltip = available_chief_of_army
+			show_ideas_tooltip = BYZ_alexandros_papagos
 		}
 	}
 

@@ -16,9 +16,9 @@ bookmarks = {
 				orthodox_idea
 			}
 			focuses = {
-				BYZ_court_the_legions
-				BYZ_address_the_senate
-				BYZ_a_public_funeral
+				BYZ_orthodoxy_alone
+				BYZ_christendom_united
+				BYZ_ask_the_pope
 			}
 		}
 
@@ -27,6 +27,17 @@ bookmarks = {
 			ideology = neutrality
 			ideas = {
 				islam_idea
+			}
+			focuses = {
+
+			}
+		}
+
+		"PER"={
+			history = "PER_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				zoroastrian_idea
 			}
 			focuses = {
 

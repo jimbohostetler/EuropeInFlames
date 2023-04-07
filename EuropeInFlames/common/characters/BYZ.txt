@@ -15,8 +15,8 @@ characters={
 		}
 	}
 
-	BYZ_alexandros_papagos={
-		name=BYZ_alexandros_papagos
+	BYZ_alexandros_papagos = {
+		name="Alexandros Papagos"
 		portraits={
 			army={
 				small="GFX_idea_gre_alexandros_papagos"
@@ -65,7 +65,7 @@ characters={
 	}
 
 	BYZ_markos_drakos = {
-		name = BYZ_markos_drakoss
+		name = "Markos Drakoss"
 		portraits = {
 			army = {
 				large="GFX_portrait_gre_markos_drakos"
@@ -104,7 +104,7 @@ characters={
 	}
 
 	BYZ_erotas_karahaliides = {
-		name = BYZ_erotas_karahaliides
+		name = "Erotas Karahaliides"
 		portraits = {
 			army = {
 				small = GFX_portrait_ITA_luigi_einaudi_small
@@ -131,7 +131,7 @@ characters={
 	}
 
 	BYZ_makis_barbiadis = {
-		name = BYZ_makis_barbiadis
+		name = "Makis Barbiadis"
 		portraits = {
 			army = {
 				small="GFX_idea_generic_political_advisor_europe_1"
@@ -154,6 +154,43 @@ characters={
 			ai_will_do = {
 				base = 3.000
 			}
+		}
+	}
+
+	BYZ_alexandros_sakellariou = {
+		name="Alexandros Sakellariou"
+		portraits = {
+			army = {
+				small="GFX_idea_gre_alexandros_sakellariou"
+				large=GFX_portrait_GRE_alexandros_sakellariou
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = BYZ_alexandros_sakellariou
+			name = BYZ_alexandros_sakellariou
+			allowed = {
+				original_tag = BYZ
+			}
+			available = {
+				has_completed_focus = BYZ_naval_focus
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+		navy_leader = {
+			traits = { media_personality bold caustic_personality fleet_protector }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=2
 		}
 	}
 }
