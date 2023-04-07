@@ -964,7 +964,7 @@ focus_tree = {
 		id = BYZ_the_enemy_of_my_enemy
 		icon = GFX_focus_ITA_blackshirts
 
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = BYZ_strike_at_the_enemy
 		prerequisite = { focus = BYZ_strike_at_the_enemy }
@@ -984,6 +984,107 @@ focus_tree = {
 					target = AFC
 					type = annex_everything
 				}
+			}
+		}
+	}
+
+	focus = {
+		id = BYZ_imperator
+		icon = GFX_focus_ITA_mare_nostrum
+
+		x = 1
+		y = 1
+		relative_position_id = BYZ_strike_at_the_enemy
+		prerequisite = { focus = BYZ_strike_at_the_enemy }
+
+		available = {
+			is_subject = no
+			NOT = {
+				has_war_with = AFC
+			}
+			OR = {
+				AFC = {
+					is_puppet_of = BYZ
+				}
+				AFC = {
+					exists = no
+				}
+			}
+		}
+
+		cost = 10
+		ai_will_do = {
+			factor = 1000
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_leader = { ruling_only = yes name = "Basileus Basil IV" }
+				}
+				swap_ruler_traits = {
+					remove = young_basileus
+					add = imperator
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BYZ_renovatio_imperii_romanorum
+		icon = GFX_focus_ITA_mare_nostrum
+
+		x = 0
+		y = 1
+		relative_position_id = BYZ_imperator
+		prerequisite = { focus = BYZ_imperator }
+
+		available = {
+			344 = {
+				is_owned_by = BYZ
+			}
+			345 = {
+				is_owned_by = BYZ
+			}
+			447 = {
+				is_owned_by = BYZ
+			}
+			553 = {
+				is_owned_by = BYZ
+			}
+			677 = {
+				is_owned_by = BYZ
+			}
+			799 = {
+				is_owned_by = BYZ
+			}
+
+		}
+
+		cost = 10
+		ai_will_do = {
+			factor = 1000
+		}
+
+		completion_reward = {
+			set_cosmetic_tag = BYZ_rome
+			344 = {
+				add_core_of = BYZ
+			}
+			345 = {
+				add_core_of = BYZ
+			}
+			447 = {
+				add_core_of = BYZ
+			}
+			553 = {
+				add_core_of = BYZ
+			}
+			677 = {
+				add_core_of = BYZ
+			}
+			799 = {
+				add_core_of = BYZ
 			}
 		}
 	}

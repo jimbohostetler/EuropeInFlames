@@ -4157,6 +4157,9 @@
  BYZ_ADJ:0 "Byzantine"
  BYZ_subject:0 "$OVERLORDADJ$ $BYZ$"
  BYZ_subject_DEF:0 "$OVERLORDADJ$ $BYZ$"
+ BYZ_rome:0 "Roman Empire"
+ BYZ_rome_DEF:0 "the Roman Empire"
+ BYZ_rome_ADJ:0 "Roman"
 
  AFC_fascism:0 "al Faris Caliphate"
  AFC_fascism_DEF:0 "the al Faris Caliphate"

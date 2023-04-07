@@ -2422,6 +2422,10 @@ l_english:
  BYZ_strike_at_the_enemy_desc:0 "The time has finally come.  After a thousand years of hiding behind the Theodosian Wall, it is time to reconquer the lost Roman lands of the Caliphate.  Basileus Basil IV will lead us on a glorious reconquest not seen since Emperor Justinian!"
  BYZ_the_enemy_of_my_enemy:0 "The Enemy of my Enemy"
  BYZ_the_enemy_of_my_enemy_desc:0 "The Persians have been at war with Islam for as long as we have.  Perhaps now that we have shown that the Caliphate is not unfailable they will join our cause."
+ BYZ_imperator:0 "Imperator"
+ BYZ_imperator_desc:0 "After defeating the Caliphate, Basil IV has proven himself to be more than a mere Basileus.  He is truly an Imperator of old."
+ BYZ_renovatio_imperii_romanorum:0 "Renovatio Imperii Romanorum"
+ BYZ_renovatio_imperii_romanorum_desc:0 "Having reclaimed rightful Roman lands in the east as well as Alexandria, the Roman Empire can once again take it's place as the preeminent power of the Mediterranean."
 
  BYZ_ease_defense:0 "Ease our defenses"
  BYZ_ease_defense_desc:0 "We must ease the burden placed on the Greek people.  A more tempered approach to defense is needed."
