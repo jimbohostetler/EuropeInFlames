@@ -67,3 +67,47 @@ country_event = {
 		}
 	}
 }
+
+# Byzantine asks Pope to join Christendom United
+country_event = {
+	id = papal.2
+	title = papal.2.t
+	desc = papal.2.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+
+	# YES
+	option = {
+		name = papal.2.a
+		ai_chance = {
+			factor = 99 #Why wouldn't they?
+		}
+	
+		BYZ = {
+			create_faction = UnitedCristendom
+			add_to_faction = BYZ
+			add_to_faction = PAP
+
+			hidden_effect = {
+				news_event = { id = byzantine_news_event.7 hours = 2 }
+			}
+		}
+	}
+
+	# NO
+	option = {
+		name = papal.2.b
+		ai_chance = {	
+			factor = 1
+		}
+
+		BYZ = {
+			add_war_support = 0.05
+
+			hidden_effect = {
+				news_event = { id = byzantine_news_event.8 hours = 2 }
+			}
+		}
+	}
+}

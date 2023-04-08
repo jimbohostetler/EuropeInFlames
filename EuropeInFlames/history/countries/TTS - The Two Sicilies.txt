@@ -5,9 +5,10 @@ oob = "TTS_1936"
 set_research_slots = 3
 set_stability = 0.5
 set_war_support = 0.5
-add_ideas = {
-}
 
+add_ideas = {
+	catholic_idea
+}
 
 # Starting tech
 set_technology = {

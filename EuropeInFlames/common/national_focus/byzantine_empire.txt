@@ -894,15 +894,15 @@ focus_tree = {
 
 		cost = 5
 		ai_will_do = {
-			factor = 20
+			factor = 10
 		}
 
 		completion_reward = {
-			#TODO: Need to give PAP a choice here, even if 100% for playability of PAP
-			create_faction = UnitedCristendom
-			add_to_faction = BYZ
-			add_to_faction = PAP
-
+			PAP = {
+				country_event = {
+					id = papal.2 hours = 6
+				}
+			}
 
 			swap_ideas = {
 				remove_idea = BYZ_worker_shortage_bul
@@ -979,10 +979,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			AFC  = {
+				add_opinion_modifier = { target = PER modifier = pact_against_us }
+			}
 			PER = {
-				declare_war_on = {
-					target = AFC
+				add_opinion_modifier = { target = AFC modifier = pact_against_us }
+
+				create_wargoal = {
 					type = annex_everything
+					target = AFC
+					expire = 0
 				}
 			}
 		}

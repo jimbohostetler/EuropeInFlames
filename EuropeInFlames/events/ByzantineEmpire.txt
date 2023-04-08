@@ -190,3 +190,66 @@ news_event = {
     }
 }
 
+# Pope Faction Yes
+news_event = {
+    id = byzantine_news_event.7
+    title = {
+        text = byzantine_news_event.7.t
+    }
+    desc = {
+        text = byzantine_news_event.7.desc
+    }
+    
+    picture = GFX_my_news_event_picture
+    
+    is_triggered_only = yes
+    major = yes
+
+    option = {
+        name = my_news_event.7.a
+        trigger = {
+            TAG = BYZ
+        }
+    }
+    option = {
+        name = my_news_event.7.b
+        trigger = {
+            NOT = {
+                TAG = BYZ
+            }
+        }
+    }
+    
+}
+
+# Pope Faction No
+news_event = {
+    id = byzantine_news_event.8
+    title = {
+        text = byzantine_news_event.8.t
+    }
+    desc = {
+        text = byzantine_news_event.8.desc
+    }
+    
+    picture = GFX_my_news_event_picture
+    
+    is_triggered_only = yes
+    major = yes
+
+    option = {
+        name = my_news_event.8.a
+        trigger = {
+            TAG = BYZ
+        }
+    }
+    option = {
+        name = my_news_event.8.b
+        trigger = {
+            NOT = {
+                TAG = BYZ
+            }
+        }
+    }
+}
+

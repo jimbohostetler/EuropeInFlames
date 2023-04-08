@@ -3338,6 +3338,12 @@
  byzantine_news_event.6.t:0 "Kosovo refuses"
  byzantine_news_event.6.desc:0 "They will pay for their arrogance."
  byzantine_news_event.6.a:0 "Start the war machine!"
+ byzantine_news_event.7.t:0 "Pope Accepts"
+ byzantine_news_event.7.desc:0 "We stand united against the heretics!"
+ byzantine_news_event.7.a:0 "United under Christ."
+ byzantine_news_event.8.t:0 "Pope refuses"
+ byzantine_news_event.8.desc:0 "They will pay for their arrogance."
+ byzantine_news_event.8.a:0 "We will go it alone!"
 
  byzantine.1.t:0 "Albania tension"
  byzantine.2.t:0 "Kosovo tension"
