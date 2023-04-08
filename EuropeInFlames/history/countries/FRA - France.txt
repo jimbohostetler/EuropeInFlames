@@ -1,5 +1,8 @@
 ﻿capital = 16
 
+puppet = NRM
+puppet = LUI
+
 if = {
 	limit = {
 		NOT = {
@@ -29,7 +32,7 @@ if = {
 
 if = {
 	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "FRA_1936_air_bba"
+		# set_air_oob = "FRA_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
 			aa_cannon_1 = 1
@@ -42,7 +45,7 @@ if = {
 			iw_large_airframe = 1
 		}
 	else = {
-		set_air_oob = "FRA_1936_air_legacy"
+		# set_air_oob = "FRA_1936_air_legacy"
 		set_technology = {
 			early_fighter = 1
 			naval_bomber1 = 1
@@ -329,16 +332,16 @@ set_convoys = 300
 
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1932.5.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 64
-	fascism = 1
-	neutrality = 15
-	communism = 20
+	democratic = 15
+	fascism = 15
+	neutrality = 40
+	communism = 30
 }
 
 add_ideas = {
