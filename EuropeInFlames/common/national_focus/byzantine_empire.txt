@@ -1052,16 +1052,49 @@ focus_tree = {
 			345 = {
 				is_owned_by = BYZ
 			}
+			446 = {
+				is_owned_by = BYZ
+			}
 			447 = {
 				is_owned_by = BYZ
 			}
+			448 = {
+				is_owned_by = BYZ
+			}
+			449 = {
+				is_owned_by = BYZ
+			}
+			450 = {
+				is_owned_by = BYZ
+			}
+			451 = {
+				is_owned_by = BYZ
+			}
+			452 = {
+				is_owned_by = BYZ
+			}
+			453 = {
+				is_owned_by = BYZ
+			}
 			553 = {
+				is_owned_by = BYZ
+			}
+			661 = {
+				is_owned_by = BYZ
+			}
+			662 = {
+				is_owned_by = BYZ
+			}
+			663 = {
 				is_owned_by = BYZ
 			}
 			677 = {
 				is_owned_by = BYZ
 			}
 			799 = {
+				is_owned_by = BYZ
+			}
+			907 = {
 				is_owned_by = BYZ
 			}
 
@@ -1073,24 +1106,48 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_cosmetic_tag = BYZ_rome
-			344 = {
-				add_core_of = BYZ
-			}
-			345 = {
-				add_core_of = BYZ
-			}
-			447 = {
-				add_core_of = BYZ
-			}
-			553 = {
-				add_core_of = BYZ
-			}
-			677 = {
-				add_core_of = BYZ
-			}
-			799 = {
-				add_core_of = BYZ
+			# set_cosmetic_tag = BYZ_rome
+			set_cosmetic_tag = SPQR_UNIFIED
+			custom_effect_tooltip = form_spqr_core_mare_nostrum_states_tt
+			hidden_effect = {
+				news_event = { id = wtt_news.64 hours = 6 }
+				set_global_flag = form_roman_empire_flag
+
+				344 = {
+					add_core_of = BYZ
+				}
+				345 = {
+					add_core_of = BYZ
+				}
+				446 = {
+					add_core_of = BYZ
+				}
+				447 = {
+					add_core_of = BYZ
+				}
+ 				448 = { add_core_of = BYZ }
+				449 = { add_core_of = BYZ }
+ 				450 = { add_core_of = BYZ }
+				451 = { add_core_of = BYZ }
+ 				452 = { add_core_of = BYZ }
+				453 = {
+					add_core_of = BYZ
+				}
+				553 = {
+					add_core_of = BYZ
+				}
+				661 = { add_core_of = BYZ }
+				662 = { add_core_of = BYZ }
+				663 = { add_core_of = BYZ }
+				677 = {
+					add_core_of = BYZ
+				}
+				799 = {
+					add_core_of = BYZ
+				}
+				907 = {
+					add_core_of = BYZ
+				}
 			}
 		}
 	}
