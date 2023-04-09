@@ -15,19 +15,18 @@ state={
 			6115 15 
 		}
 		
-		owner = NOR
+		owner = DEN
 		buildings = {
 			infrastructure = 3
 			arms_factory = 2
 			industrial_complex = 3
 			dockyard = 1
-			air_base = 4
 			6115 = {
 				naval_base = 6
 				coastal_bunker = 3
 			}
 		}
-		add_core_of = NOR
+		add_core_of = DEN
 	}
 
 	provinces={

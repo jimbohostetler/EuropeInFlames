@@ -1,5 +1,7 @@
 ﻿capital = 37
 
+puppet = VNN
+
 oob = "DEN_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }

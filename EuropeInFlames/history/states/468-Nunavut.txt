@@ -11,17 +11,16 @@ state={
 	}
 
 	history={
-		owner = CAN
+		owner = VNN
 		buildings = {
 			infrastructure = 3 #was: 6
 			arms_factory = 2
 			industrial_complex = 1
-			air_base = 3
 			12149 = {
 				naval_base = 6
 			}
 		}
-		add_core_of = CAN
+		add_core_of = VNN
 		victory_points = {
 			4345 20
 		}
